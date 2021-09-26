@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INF370.Group6.API", "INF370.Group6.API.csproj", "{89033001-5D6B-4B04-9935-7A3C08B57A1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89033001-5D6B-4B04-9935-7A3C08B57A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89033001-5D6B-4B04-9935-7A3C08B57A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89033001-5D6B-4B04-9935-7A3C08B57A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89033001-5D6B-4B04-9935-7A3C08B57A1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6803C7BC-B0D2-4936-BFBA-5E6881696BE7}
+	EndGlobalSection
+EndGlobal
