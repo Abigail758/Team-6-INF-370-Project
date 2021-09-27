@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mankg\\Desktop\\XYZ\\Abigail\\Dev\\INF370.Group6.API\\INF370.Group6.API.csproj": {}
+    "C:\\Users\\27825\\Documents\\GitHub\\Team-6-INF-370-Project\\INF370.Group6.API\\INF370.Group6.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mankg\\Desktop\\XYZ\\Abigail\\Dev\\INF370.Group6.API\\INF370.Group6.API.csproj": {
+    "C:\\Users\\27825\\Documents\\GitHub\\Team-6-INF-370-Project\\INF370.Group6.API\\INF370.Group6.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mankg\\Desktop\\XYZ\\Abigail\\Dev\\INF370.Group6.API\\INF370.Group6.API.csproj",
+        "projectUniqueName": "C:\\Users\\27825\\Documents\\GitHub\\Team-6-INF-370-Project\\INF370.Group6.API\\INF370.Group6.API.csproj",
         "projectName": "INF370.Group6.API",
-        "projectPath": "C:\\Users\\mankg\\Desktop\\XYZ\\Abigail\\Dev\\INF370.Group6.API\\INF370.Group6.API.csproj",
-        "packagesPath": "C:\\Users\\mankg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mankg\\Desktop\\XYZ\\Abigail\\Dev\\INF370.Group6.API\\obj\\",
+        "projectPath": "C:\\Users\\27825\\Documents\\GitHub\\Team-6-INF-370-Project\\INF370.Group6.API\\INF370.Group6.API.csproj",
+        "packagesPath": "C:\\Users\\27825\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\27825\\Documents\\GitHub\\Team-6-INF-370-Project\\INF370.Group6.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\mankg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\27825\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -91,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
