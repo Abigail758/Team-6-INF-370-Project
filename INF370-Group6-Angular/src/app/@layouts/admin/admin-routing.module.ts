@@ -14,7 +14,9 @@ import { ListProjectStatusesComponent } from './pages/projects/project-statuses/
 import { ListPhasesComponent } from './pages/phases/manage-phases/list-phases/list-phases.component';
 import { ListPhaseStatusesComponent } from './pages/phases/statuses/list-phase-statuses/list-phase-statuses.component';
 import { ListTaskStatusesComponent } from './pages/tasks/task-statuses/list-task-statuses/list-task-statuses.component';
-
+import { AddSubcontractorComponent } from './pages/subcontractors/manage-subcontractors/add-subcontractors/add-subcontractor.component';
+import { UpdateSubcontractorComponent } from './pages/subcontractors/manage-subcontractors/update-subcontractors/update-subcontractors.component';
+import { ListSubcontractorsComponent } from './pages/subcontractors/manage-subcontractors/list-subcontractors/list-subcontractors.component';
 const routes: Routes = [
   {
     path: '',
@@ -29,6 +31,9 @@ const routes: Routes = [
       { path: 'project-statuses', component: ListProjectStatusesComponent },
       { path: 'phase-statuses', component: ListPhaseStatusesComponent },
       { path: 'task-statuses', component: ListTaskStatusesComponent },
+      { path: 'add-subcontractors', component: AddSubcontractorComponent },
+      { path: 'update-subcontractors', component: UpdateSubcontractorComponent },
+      { path: 'list-subcontractors', component: ListSubcontractorsComponent },
     ]
   }
 ];
