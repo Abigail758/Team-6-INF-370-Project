@@ -6,7 +6,7 @@
     </div>
 
     <mat-form-field>
-      <mat-label>Filter</mat-label>
+      <mat-label>Search Project</mat-label>
       <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium">
     </mat-form-field>
   </mat-card>
@@ -51,10 +51,10 @@
             <mat-icon class="icon-library">create</mat-icon>
           </button>
 
-          <button mat-button (click)="onDeleteRecord(element)" matTooltip="Delete">
-            <mat-icon class="icon-library">delete</mat-icon>
+          <button mat-button  matTooltip="Complete Project">
+            <mat-icon class="icon-library">task</mat-icon>
           </button>
-
+          <!-- (click)="onDeleteRecord(element)" -->
           <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="list menu" matTooltip="Show actions">
             <mat-icon>more_horiz</mat-icon>
           </button>

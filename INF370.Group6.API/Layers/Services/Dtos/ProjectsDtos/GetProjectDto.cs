@@ -1,5 +1,5 @@
-﻿using System;
-
+﻿
+using System;
 namespace INF370.Group6.API.Layers.Services.Dtos.ProjectsDtos
 {
     public class GetProjectDto

@@ -40,6 +40,7 @@ import { OverlayModule } from '@angular/cdk/overlay';
 import { CustomSnackBarComponent } from './custom-components/custom-snack-bar/custom-snack-bar.component';
 import { CustomErrorSnackBarComponent } from './custom-components/custom-error-snack-bar/custom-error-snack-bar.component';
 
+
 @NgModule({
   declarations: [
     CustomSnackBarComponent,
@@ -82,6 +83,7 @@ import { CustomErrorSnackBarComponent } from './custom-components/custom-error-s
     MatBadgeModule,
     MatBottomSheetModule,
     MatTreeModule,
+    
     OverlayModule
 
   ],

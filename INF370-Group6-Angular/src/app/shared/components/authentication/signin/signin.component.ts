@@ -59,7 +59,7 @@ export class SigninComponent implements OnInit {
             let returnUrl = this._route.snapshot.queryParamMap.get('returnUrl');
             if (this._authService.currentUser != null) {
 
-              this._router.navigate([returnUrl || '/admin/projects']);
+              this._router.navigate([returnUrl || '/admin/dashboard']);
 
             }
           }

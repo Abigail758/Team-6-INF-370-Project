@@ -35,6 +35,16 @@ import { ListPhaseTasksComponent } from './pages/tasks/manage-tasks/list-phase-t
 import { ListTaskStatusesComponent } from './pages/tasks/task-statuses/list-task-statuses/list-task-statuses.component';
 import { AddTaskStatusComponent } from './pages/tasks/task-statuses/add-task-status/add-task-status.component';
 import { UpdateTaskStatusComponent } from './pages/tasks/task-statuses/update-task-status/update-task-status.component';
+import { RentalRequestStatusComponent } from './pages/rentals/rental-request-status/rental-request-status.component';
+import { RentalComponent } from './pages/rentals/rental/rental.component';
+import { RentalStatusComponent } from './pages/rentals/rental-status/rental-status.component';
+import { RentalRequestComponent } from './pages/rentals/rental-request/rental-request.component';
+import { ReportMainComponent } from './pages/reports/report-main/report-main.component';
+import { MonthlyrentalreportComponent } from './pages/reports/monthlyrentalreport/monthlyrentalreport.component';
+import { ProjectprogressreportComponent } from './pages/reports/projectprogressreport/projectprogressreport.component';
+import { InventoryreportComponent } from './pages/reports/inventoryreport/inventoryreport.component';
+import { ExpensereportComponent } from './pages/reports/expensereport/expensereport.component';
+import { SubcontractoreportComponent } from './pages/reports/subcontractoreport/subcontractoreport.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +79,17 @@ import { UpdateTaskStatusComponent } from './pages/tasks/task-statuses/update-ta
     ListPhaseTasksComponent,
     ListTaskStatusesComponent,
     AddTaskStatusComponent,
-    UpdateTaskStatusComponent
+    UpdateTaskStatusComponent,
+    RentalRequestStatusComponent,
+    RentalComponent,
+    RentalStatusComponent,
+    RentalRequestComponent,
+    ReportMainComponent,
+    MonthlyrentalreportComponent,
+    ProjectprogressreportComponent,
+    InventoryreportComponent,
+    ExpensereportComponent,
+    SubcontractoreportComponent
   ],
   imports: [
     AdminRoutingModule,

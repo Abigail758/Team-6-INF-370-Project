@@ -8,6 +8,8 @@ import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { JwtModule } from '@auth0/angular-jwt';
 import { environment } from 'src/environments/environment';
+import { HomeComponent } from './home/home/home.component';
+
 
 export function tokenGetter() {
   return localStorage.getItem("token");
@@ -15,12 +17,15 @@ export function tokenGetter() {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+ 
     SharedModule,
     HttpClientModule,
     JwtModule.forRoot({
@@ -32,5 +37,6 @@ export function tokenGetter() {
   ],
   providers: [],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }
