@@ -1,0 +1,80 @@
+<div class="loader-container">
+  <mat-progress-bar *ngIf="showLoadingEndicator" mode="indeterminate"></mat-progress-bar>
+</div>
+<div class="container">
+  <mat-toolbar class="toolbar">
+    <span class="fill-remaining-space"></span>
+    <div class="dialog-header">
+      <div class="dialog-header-title">Update Employee </div>
+      <div class="dialog-header-error-message" *ngIf="errorMessage">{{errorMessage}}</div>
+    </div>
+    <span class="fill-remaining-space"></span>
+  </mat-toolbar>
+
+  <form [formGroup]="updateForm" class="form" (ngSubmit)="onSubmit()">
+
+    <div class="field-container-inline">
+      <mat-form-field class="field-inline">
+        <mat-label>Type</mat-label>
+        <mat-select formControlName="EmployeeTypeId">
+          <mat-option *ngFor="let type of listOfEmployeeTypes" [value]="type.id">
+            {{type.name}}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="EmployeeTypeId.touched && EmployeeTypeId.invalid">
+          <div *ngIf="EmployeeTypeId.errors.required">Type is required.</div>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="field-inline">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="Name" type="text" required>
+        <mat-error *ngIf="Name.touched && Name.invalid">
+          <div *ngIf="Name.errors.required">Name is required.</div>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="field-inline">
+        <mat-label>Surname</mat-label>
+        <input matInput formControlName="Surname" type="text" required>
+        <mat-error *ngIf="Surname.touched && Surname.invalid">
+          <div *ngIf="Surname.errors.required">Surname is required.</div>
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="field-container-inline">
+      <mat-form-field class="field-inline">
+        <mat-label>ID Number</mat-label>
+        <input matInput formControlName="IdNumber" type="text" required>
+        <mat-error *ngIf="IdNumber.touched && IdNumber.invalid">
+          <div *ngIf="IdNumber.errors.required">Id Number is required.</div>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="field-inline">
+        <mat-label>Phone Number</mat-label>
+        <input matInput formControlName="PhoneNumber" type="text" required>
+        <mat-error *ngIf="PhoneNumber.touched && PhoneNumber.invalid">
+          <div *ngIf="PhoneNumber.errors.required">Phone Number is required.</div>
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+
+    <div class="field-container-inline">
+      <mat-form-field class="field-inline">
+        <mat-label>Address</mat-label>
+        <input matInput formControlName="Address" type="text" required>
+        <mat-error *ngIf="Address.touched && Address.invalid">
+          <div *ngIf="Address.errors.required">Address is required.</div>
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="button-row">
+      <button mat-button mat-dialog-close>Cancel </button>
+      <button mat-raised-button type="submit" class="button-submit">Submit</button>
+    </div>
+  </form>
+</div>
