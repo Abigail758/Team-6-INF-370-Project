@@ -4,6 +4,7 @@ using INF370.Group6.API.Layers.Core.Phases;
 using INF370.Group6.API.Layers.Core.Projects;
 using INF370.Group6.API.Layers.Core.Projects.ProjectStatuses;
 using INF370.Group6.API.Layers.Core.Tasks;
+using INF370.Group6.API.Layers.Core.Rental;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -51,8 +52,10 @@ namespace INF370.Group6.API.Layers.Data.Context
         public DbSet<PhaseStatus> PhaseStatuses { get; set; }
         public DbSet<Task> Tasks { get; set; }
         public DbSet<TaskStatus> TaskStatuses { get; set; }
-
-
+        public DbSet<Rental> Rentals { get; set; }
+        public DbSet<RentalStatus> RentalStatuses { get; set; }
+        public DbSet<RentalRequest> RentalRequests { get; set; }
+        public DbSet<RentalRequestStatus> RentalRequestStatuses { get; set; }
 
 
     }

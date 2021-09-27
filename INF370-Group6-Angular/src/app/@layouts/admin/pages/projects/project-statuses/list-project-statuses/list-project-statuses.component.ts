@@ -89,6 +89,7 @@ export class ListProjectStatusesComponent implements OnInit {
     //   }
     // });
   }
+  
 
   private getRecordsFromServer() {
     this._projectService.getAllProjectStatuses().subscribe(event => {
