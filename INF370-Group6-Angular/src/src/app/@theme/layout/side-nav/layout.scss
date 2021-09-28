@@ -1,0 +1,19 @@
+@import "/src/app/@theme/generic/colors.scss";
+
+mat-sidenav {
+  width: 250px;
+}
+
+mat-sidenav-container {
+  height: 100vh;
+  background-color: $body-main-grey;
+}
+
+.router-link-active {
+  color: white;
+}
+
+.router-link-active-admin-title {
+  text-decoration: none;
+  color: white;
+}

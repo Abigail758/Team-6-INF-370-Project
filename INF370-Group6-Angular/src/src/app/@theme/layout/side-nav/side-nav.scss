@@ -1,0 +1,43 @@
+@import "/src/app/@theme/generic/colors.scss";
+:host {
+  .mat-icon {
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+  .profile-card {
+    text-align: center;
+    padding: 0 20px 20px 20px;
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+}
+
+.header {
+  margin-top: 1em;
+}
+
+// .mat-list-item{
+//   font-size: 13px;
+// }
+
+.sub-header {
+  color: $theme-tertiary;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 0 0 0 10px;
+  height: 36px;
+  padding-bottom: 8px;
+}
+
+.menu-item {
+  height: 32px !important;
+  font-size: 12.5px;
+  color: $black;
+
+
+  // padding: 7px 0 !important;
+}
