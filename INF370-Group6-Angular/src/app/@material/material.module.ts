@@ -83,8 +83,13 @@ import { CustomErrorSnackBarComponent } from './custom-components/custom-error-s
     MatBadgeModule,
     MatBottomSheetModule,
     MatTreeModule,
+<<<<<<< Updated upstream
     
     OverlayModule
+=======
+    OverlayModule,
+    
+>>>>>>> Stashed changes
 
   ],
   exports: [
@@ -125,6 +130,7 @@ import { CustomErrorSnackBarComponent } from './custom-components/custom-error-s
     MatBottomSheetModule,
     MatTreeModule,
     OverlayModule,
+    
 
     CustomSnackBarComponent,
     CustomErrorSnackBarComponent
