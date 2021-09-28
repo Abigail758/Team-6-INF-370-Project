@@ -1,0 +1,40 @@
+@import "/src/app/@theme/generic/colors.scss";
+
+.top-nav-bar {
+  padding-top: 0px;
+  background-color: $theme-tertiary;
+  // position: fixed;
+  // top: 0;
+
+}
+
+// .sticky {
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+// }
+
+.top-nav-bar-row {
+  display: flex;
+}
+
+.top-nav-bar-row-toggle-button {
+  mat-icon {
+    color: $white;
+  }
+}
+
+.top-nav-bar-remaining-space {
+  flex: 1 1 auto;
+}
+
+.top-nav-bar-controls-items {
+  display: flex;
+  li {
+    list-style: none;
+  }
+}
+
+.top-nav-bar-controls-item {
+  color: $white;
+}

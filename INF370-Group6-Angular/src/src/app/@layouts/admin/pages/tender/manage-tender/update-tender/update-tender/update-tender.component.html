@@ -1,0 +1,76 @@
+<div class="loader-container">
+  <mat-progress-bar *ngIf="showLoadingEndicator" mode="indeterminate"></mat-progress-bar>
+</div>
+<div class="container">
+  <mat-toolbar class="toolbar">
+    <span class="fill-remaining-space"></span>
+    <div class="dialog-header">
+      <div class="dialog-header-title">Update Proposed Tender </div>
+      <div class="dialog-header-error-message" *ngIf="errorMessage">{{errorMessage}}</div>
+    </div>
+    <span class="fill-remaining-space"></span>
+  </mat-toolbar>
+
+  <form [formGroup]="updateForm" class="form" (ngSubmit)="onSubmit()">
+
+    <div class="field-container-inline">
+      <mat-form-field class="field-inline">
+        <mat-label>Tender Status</mat-label>
+        <mat-select formControlName="TenderStatusId">
+          <mat-option *ngFor="let type of listOfTenderStatuses" [value]="type.id">
+            {{type.name}}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="TenderStatusId.touched && TenderStatusId.invalid">
+          <div *ngIf="TenderStatusId.errors.required">Tender status is required.</div>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="field-inline">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="Name" type="text" required>
+        <mat-error *ngIf="Name.touched && Name.invalid">
+          <div *ngIf="Name.errors.required">Name is required.</div>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="field-inline">
+        <mat-label>Description</mat-label>
+        <input matInput formControlName="Description" type="text" required>
+        <mat-error *ngIf="Description.touched &&Description.invalid">
+          <div *ngIf="Description.errors.required">Description is required.</div>
+        </mat-error>
+      </mat-form-field>
+    </div>
+  
+    
+    <div class="field-container-inline">
+      <mat-form-field class="field-inline">
+        <mat-label>Tender Source</mat-label>
+        <input matInput formControlName="TenderSource" type="text" required>
+        <mat-error *ngIf="TenderSource.touched && TenderSource.invalid">
+          <div *ngIf="TenderSource.errors.required">Tender Source is required.</div>
+        </mat-error>
+      </mat-form-field>
+
+      
+      <mat-form-field class="field-inline">
+        <mat-label>Date Submitted</mat-label>
+        <input matInput [matDatepicker]="picker1" [min]="recordToUpdate.rawDateSubmitted" [max]="recordToUpdate.rawDateSubmitted"  formControlName=" dateSubmitted">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+        <mat-error *ngIf=" DateSubmitted.touched &&  DateSubmitted.invalid">
+          <div *ngIf=" DateSubmitted.errors.required">Date submitted is required.</div>
+        </mat-error>
+      </mat-form-field>
+    
+    </div>
+
+
+
+    <div class="button-row">
+      <button mat-button mat-dialog-close>Cancel </button>
+      <button mat-raised-button type="submit" class="button-submit">Submit</button>
+    </div>
+  </form>
+</div>

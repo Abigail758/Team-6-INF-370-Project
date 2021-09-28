@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: $body-background-color;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+mat-progress-bar {
+  height: 4.5px;
+}
+
+//SideNav
+mat-sidenav {
+  width: 40%;
+}
+
+mat-drawer {
+  background-color: rgb(210, 212, 216);
+  width: 290px;
+}
+
+mat-sidenav {
+  background-color: rgb(210, 212, 216);
+  width: 290px;
+}

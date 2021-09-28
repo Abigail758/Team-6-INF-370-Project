@@ -1,0 +1,51 @@
+.side-menu {
+  background-color: $controlers-primary-forebackground-color;
+  width: 7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12px;
+}
+
+.menu-item {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  color: #ffffff;
+  &:hover {
+    background-color: $palette-1181-color-4;
+    width: 100%;
+  }
+}
+
+.menu-seperator {
+  width: 80%;
+  height: 2px;
+  background: $controlers-tertiary-forebackground-color;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+.menu-icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-icon-symbol {
+  margin-top: 0.5em;
+  padding: 0;
+}
+
+.menu-icon-title {
+  margin-top: -0.8em;
+  padding: 0;
+  font-size: 0.6rem;
+  color: #ffffff;
+}
