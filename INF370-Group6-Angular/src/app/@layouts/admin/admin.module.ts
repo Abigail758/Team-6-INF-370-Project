@@ -45,6 +45,8 @@ import { ProjectprogressreportComponent } from './pages/reports/projectprogressr
 import { InventoryreportComponent } from './pages/reports/inventoryreport/inventoryreport.component';
 import { ExpensereportComponent } from './pages/reports/expensereport/expensereport.component';
 import { SubcontractoreportComponent } from './pages/reports/subcontractoreport/subcontractoreport.component';
+import { AddRentalComponent } from './pages/rental/add-rental/add-rental.component';
+import { UpdateRentalComponent } from './pages/rental/update-rental/update-rental.component';
 
 @NgModule({
   declarations: [
@@ -89,7 +91,9 @@ import { SubcontractoreportComponent } from './pages/reports/subcontractoreport/
     ProjectprogressreportComponent,
     InventoryreportComponent,
     ExpensereportComponent,
-    SubcontractoreportComponent
+    SubcontractoreportComponent,
+    AddRentalComponent,
+    UpdateRentalComponent
   ],
   imports: [
     AdminRoutingModule,
