@@ -25,7 +25,19 @@ import { ProjectprogressreportComponent } from './pages/reports/projectprogressr
 import { InventoryreportComponent } from './pages/reports/inventoryreport/inventoryreport.component';
 import { ExpensereportComponent } from './pages/reports/expensereport/expensereport.component';
 import { SubcontractoreportComponent } from './pages/reports/subcontractoreport/subcontractoreport.component';
+import { AddTenderComponent } from './pages/tender/manage-tender/add-tender/add-tender/add-tender.component';
 
+import { ListTenderComponent } from './pages/tender/manage-tender/list-tender/list-tender/list-tender.component'; 
+import { ListTenderStatusComponent } from 'src/src/app/@layouts/admin/pages/tender/tender-statuses/list-tender-statuses/list-tender-status/list-tender-status.component';
+import { AddSupplierComponent } from './pages/supplier/manage-supplier/add-supplier/add-supplier/add-supplier.component';
+import { UpdateSupplierComponent } from './pages/supplier/manage-supplier/update-supplier/update-supplier/update-supplier.component';
+import { UpdateSupplierTypeComponent } from './pages/supplier/supplier-types/update-supplier-types/update-supplier-type/update-supplier-type.component'; 
+import { AddSupplierTypeComponent } from './pages/supplier/supplier-types/add-supplier-types/add-supplier-type/add-supplier-type.component'; 
+import { ListSupplierComponent } from './pages/supplier/manage-supplier/list-supplier/list-supplier/list-supplier.component'; 
+import { ListSupplierTypeComponent } from './pages/supplier/supplier-types/list-supplier-types/list-supplier-type/list-supplier-type.component'; 
+import { UpdateTenderComponent } from './pages/tender/manage-tender/update-tender/update-tender/update-tender.component'; 
+import { UpdateTenderStatusComponent } from './pages/tender/tender-statuses/update-tender-statuses/update-tender-status/update-tender-status.component'; 
+import { AddTenderStatusComponent } from './pages/tender/tender-statuses/add-tender-statuses/add-tender-status/add-tender-status.component';
 
 
 const routes: Routes = [
@@ -50,6 +62,20 @@ const routes: Routes = [
       { path: 'inventoryreport', component: InventoryreportComponent },
       { path: 'expensereport', component: ExpensereportComponent },
       { path: 'subcontractoreport', component: SubcontractoreportComponent },
+      { path: 'tenders', component: ListTenderComponent },
+      { path: 'supplier', component: ListSupplierComponent },
+      { path: 'tender-statuses', component: ListTenderStatusComponent },
+      { path: 'supplier-types', component: ListSupplierTypeComponent },
+            { path: 'add-supplier', component: AddSupplierComponent },
+      { path: 'update-supplier', component: UpdateSupplierComponent },
+      { path: 'update-supplier-type', component: UpdateSupplierTypeComponent },
+      { path: 'add-supplier-type', component: AddSupplierTypeComponent },
+      { path: 'update-tender', component: UpdateTenderComponent },
+      { path: 'update-tender-statuses', component: UpdateTenderStatusComponent },
+
+      { path: 'add-tender-statuses', component: AddTenderStatusComponent },
+
+
 
     ]
   }

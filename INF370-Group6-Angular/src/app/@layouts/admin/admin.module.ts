@@ -47,6 +47,19 @@ import { ExpensereportComponent } from './pages/reports/expensereport/expenserep
 import { SubcontractoreportComponent } from './pages/reports/subcontractoreport/subcontractoreport.component';
 import { AddRentalComponent } from './pages/rental/add-rental/add-rental.component';
 import { UpdateRentalComponent } from './pages/rental/update-rental/update-rental.component';
+import { AddTenderComponent } from './pages/tender/manage-tender/add-tender/add-tender/add-tender.component';
+
+import { ListTenderComponent } from './pages/tender/manage-tender/list-tender/list-tender/list-tender.component'; 
+import { ListTenderStatusComponent } from 'src/src/app/@layouts/admin/pages/tender/tender-statuses/list-tender-statuses/list-tender-status/list-tender-status.component';
+import { AddSupplierComponent } from './pages/supplier/manage-supplier/add-supplier/add-supplier/add-supplier.component';
+import { UpdateSupplierComponent } from './pages/supplier/manage-supplier/update-supplier/update-supplier/update-supplier.component';
+import { UpdateSupplierTypeComponent } from './pages/supplier/supplier-types/update-supplier-types/update-supplier-type/update-supplier-type.component'; 
+import { AddSupplierTypeComponent } from './pages/supplier/supplier-types/add-supplier-types/add-supplier-type/add-supplier-type.component'; 
+import { ListSupplierComponent } from './pages/supplier/manage-supplier/list-supplier/list-supplier/list-supplier.component'; 
+import { ListSupplierTypeComponent } from './pages/supplier/supplier-types/list-supplier-types/list-supplier-type/list-supplier-type.component'; 
+import { UpdateTenderComponent } from './pages/tender/manage-tender/update-tender/update-tender/update-tender.component'; 
+import { UpdateTenderStatusComponent } from './pages/tender/tender-statuses/update-tender-statuses/update-tender-status/update-tender-status.component'; 
+import { AddTenderStatusComponent } from './pages/tender/tender-statuses/add-tender-statuses/add-tender-status/add-tender-status.component';
 
 @NgModule({
   declarations: [
@@ -89,11 +102,24 @@ import { UpdateRentalComponent } from './pages/rental/update-rental/update-renta
     ReportMainComponent,
     MonthlyrentalreportComponent,
     ProjectprogressreportComponent,
-    InventoryreportComponent,
+    InventoryreportComponent, 
     ExpensereportComponent,
     SubcontractoreportComponent,
     AddRentalComponent,
-    UpdateRentalComponent
+    UpdateRentalComponent,
+    AddTenderComponent,
+    AddSupplierComponent,
+    UpdateSupplierComponent,
+    AddSupplierTypeComponent,
+    UpdateSupplierTypeComponent,
+    ListSupplierComponent,
+    ListSupplierTypeComponent,
+    ListTenderComponent,
+    ListTenderStatusComponent,
+    UpdateTenderComponent,
+    UpdateTenderStatusComponent,
+    AddTenderStatusComponent,
+    
   ],
   imports: [
     AdminRoutingModule,
