@@ -17,7 +17,6 @@ import { ListProjectStatusesComponent } from './pages/projects/project-statuses/
 import { ListPhasesComponent } from './pages/phases/manage-phases/list-phases/list-phases.component';
 import { ListPhaseStatusesComponent } from './pages/phases/statuses/list-phase-statuses/list-phase-statuses.component';
 import { ListTaskStatusesComponent } from './pages/tasks/task-statuses/list-task-statuses/list-task-statuses.component';
-<<<<<<< Updated upstream
 import { RentalComponent} from './pages/rentals/rental/rental.component'
 import { RentalStatusComponent} from './pages/rentals/rental-status/rental-status.component'
 import { ReportMainComponent}  from './pages/reports/report-main/report-main.component'
@@ -26,12 +25,10 @@ import { ProjectprogressreportComponent } from './pages/reports/projectprogressr
 import { InventoryreportComponent } from './pages/reports/inventoryreport/inventoryreport.component';
 import { ExpensereportComponent } from './pages/reports/expensereport/expensereport.component';
 import { SubcontractoreportComponent } from './pages/reports/subcontractoreport/subcontractoreport.component';
-=======
 import {ListTenderComponent} from './pages/tender/manage-tender/list-tender/list-tender/list-tender.component';
 import {ListSupplierComponent} from './pages/supplier/manage-supplier/list-supplier/list-supplier/list-supplier.component';
 import {ListTenderStatusComponent} from './pages/tender/tender-statuses/list-tender-statuses/list-tender-status/list-tender-status.component';
 import {ListSupplierTypeComponent} from './pages/supplier/supplier-types/list-supplier-types/list-supplier-type/list-supplier-type.component';
->>>>>>> Stashed changes
 
 
 
@@ -51,7 +48,6 @@ const routes: Routes = [
       { path: 'project-statuses', component: ListProjectStatusesComponent },
       { path: 'phase-statuses', component: ListPhaseStatusesComponent },
       { path: 'task-statuses', component: ListTaskStatusesComponent },
-<<<<<<< Updated upstream
       { path: 'rental-status', component: RentalStatusComponent },
       { path: 'rental', component: RentalComponent },
       { path: 'report-main', component: ReportMainComponent },
@@ -61,10 +57,8 @@ const routes: Routes = [
       { path: 'expensereport', component: ExpensereportComponent },
       { path: 'subcontractoreport', component: SubcontractoreportComponent },
 
-=======
       { path: 'tender-statuses', component: ListTenderStatusComponent },
       { path: 'supplier-types', component: ListSupplierTypeComponent },
->>>>>>> Stashed changes
     ]
   }
 ];

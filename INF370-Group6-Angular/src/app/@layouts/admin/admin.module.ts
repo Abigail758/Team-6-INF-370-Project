@@ -35,7 +35,6 @@ import { ListPhaseTasksComponent } from './pages/tasks/manage-tasks/list-phase-t
 import { ListTaskStatusesComponent } from './pages/tasks/task-statuses/list-task-statuses/list-task-statuses.component';
 import { AddTaskStatusComponent } from './pages/tasks/task-statuses/add-task-status/add-task-status.component';
 import { UpdateTaskStatusComponent } from './pages/tasks/task-statuses/update-task-status/update-task-status.component';
-<<<<<<< Updated upstream
 import { RentalRequestStatusComponent } from './pages/rentals/rental-request-status/rental-request-status.component';
 import { RentalComponent } from './pages/rentals/rental/rental.component';
 import { RentalStatusComponent } from './pages/rentals/rental-status/rental-status.component';
@@ -48,7 +47,6 @@ import { ExpensereportComponent } from './pages/reports/expensereport/expenserep
 import { SubcontractoreportComponent } from './pages/reports/subcontractoreport/subcontractoreport.component';
 import { AddRentalComponent } from './pages/rental/add-rental/add-rental.component';
 import { UpdateRentalComponent } from './pages/rental/update-rental/update-rental.component';
-=======
 import { AddTenderComponent } from './pages/tender/manage-tender/add-tender/add-tender/add-tender.component';
 import {ListTenderComponent} from './pages/tender/manage-tender/list-tender/list-tender/list-tender.component';
 import {ListSupplierComponent} from './pages/supplier/manage-supplier/list-supplier/list-supplier/list-supplier.component';
@@ -62,7 +60,6 @@ import {UpdateTenderComponent} from './pages/tender/manage-tender/update-tender/
 import {AddTenderStatusComponent} from './pages/tender/tender-statuses/add-tender-statuses/add-tender-status/add-tender-status.component';
 import {UpdateTenderStatusComponent} from './pages/tender/tender-statuses/update-tender-statuses/update-tender-status/update-tender-status.component';
 
->>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
@@ -98,7 +95,6 @@ import {UpdateTenderStatusComponent} from './pages/tender/tender-statuses/update
     ListTaskStatusesComponent,
     AddTaskStatusComponent,
     UpdateTaskStatusComponent,
-<<<<<<< Updated upstream
     RentalRequestStatusComponent,
     RentalComponent,
     RentalStatusComponent,
@@ -110,8 +106,7 @@ import {UpdateTenderStatusComponent} from './pages/tender/tender-statuses/update
     ExpensereportComponent,
     SubcontractoreportComponent,
     AddRentalComponent,
-    UpdateRentalComponent
-=======
+    UpdateRentalComponent,
     AddTenderComponent,
     AddSupplierComponent,
     UpdateSupplierComponent,
@@ -125,7 +120,6 @@ import {UpdateTenderStatusComponent} from './pages/tender/tender-statuses/update
     UpdateTenderStatusComponent,
     AddTenderStatusComponent,
     
->>>>>>> Stashed changes
   ],
   imports: [
     AdminRoutingModule,
