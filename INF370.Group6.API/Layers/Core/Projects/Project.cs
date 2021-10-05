@@ -10,8 +10,7 @@ namespace INF370.Group6.API.Layers.Core.Projects
     {
         public int Id { get; set; }
 
-        public ProjectStatus ProjectStatus { get; set; }
-        public int ProjectStatusId { get; set; }
+      
 
         [Required]
         [MaxLength(255)]
@@ -29,6 +28,9 @@ namespace INF370.Group6.API.Layers.Core.Projects
         public string SiteAddress { get; set; }
 
         public virtual List<Phase> Phases { get; set; }
+
+        public virtual ProjectStatus ProjectStatus { get; set; }
+        public int ProjectStatusId { get; set; }
 
         public Project()
         {

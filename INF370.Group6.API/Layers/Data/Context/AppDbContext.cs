@@ -5,6 +5,8 @@ using INF370.Group6.API.Layers.Core.Projects;
 using INF370.Group6.API.Layers.Core.Projects.ProjectStatuses;
 using INF370.Group6.API.Layers.Core.Tasks;
 using INF370.Group6.API.Layers.Core.Rental;
+using INF370.Group6.API.Layers.Core.Tender;
+using INF370.Group6.API.Layers.Core.Clients;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -56,6 +58,10 @@ namespace INF370.Group6.API.Layers.Data.Context
         public DbSet<RentalStatus> RentalStatuses { get; set; }
         public DbSet<RentalRequest> RentalRequests { get; set; }
         public DbSet<RentalRequestStatus> RentalRequestStatuses { get; set; }
+        public DbSet<Client> Clients { get; set; }
+
+
+
 
 
     }
