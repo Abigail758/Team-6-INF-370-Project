@@ -25,6 +25,10 @@ import { ProjectprogressreportComponent } from './pages/reports/projectprogressr
 import { InventoryreportComponent } from './pages/reports/inventoryreport/inventoryreport.component';
 import { ExpensereportComponent } from './pages/reports/expensereport/expensereport.component';
 import { SubcontractoreportComponent } from './pages/reports/subcontractoreport/subcontractoreport.component';
+import {ListTenderComponent} from './pages/tender/manage-tender/list-tender/list-tender/list-tender.component';
+import {ListSupplierComponent} from './pages/supplier/manage-supplier/list-supplier/list-supplier/list-supplier.component';
+import {ListTenderStatusComponent} from './pages/tender/tender-statuses/list-tender-statuses/list-tender-status/list-tender-status.component';
+import {ListSupplierTypeComponent} from './pages/supplier/supplier-types/list-supplier-types/list-supplier-type/list-supplier-type.component';
 
 
 
@@ -39,6 +43,8 @@ const routes: Routes = [
       { path: 'employees', component: ListEmployeesComponent },
       { path: 'employee-types', component: ListEmployeeTypesComponent },
       { path: 'projects', component: ListProjectsComponent },
+      { path: 'tenders', component: ListTenderComponent },
+      { path: 'supplier', component: ListSupplierComponent },
       { path: 'project-statuses', component: ListProjectStatusesComponent },
       { path: 'phase-statuses', component: ListPhaseStatusesComponent },
       { path: 'task-statuses', component: ListTaskStatusesComponent },
@@ -51,6 +57,8 @@ const routes: Routes = [
       { path: 'expensereport', component: ExpensereportComponent },
       { path: 'subcontractoreport', component: SubcontractoreportComponent },
 
+      { path: 'tender-statuses', component: ListTenderStatusComponent },
+      { path: 'supplier-types', component: ListSupplierTypeComponent },
     ]
   }
 ];

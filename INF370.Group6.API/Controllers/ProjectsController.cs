@@ -114,7 +114,7 @@ namespace INF370.Group6.API.Controllers
                 }
 
 
-                var employeeTypes = _context.Projects.Where(item => item.ProjectStatusId == recordInDb.Id);
+                var employeeTypes = _context.Projects.Where(item => item.Id == recordInDb.Id);
                 _context.Projects.RemoveRange(employeeTypes);
                 await _context.SaveChangesAsync();
 
@@ -194,8 +194,8 @@ namespace INF370.Group6.API.Controllers
             var message = "";
             if (ModelState.IsValid)
             {
-                var recordInDb = _context.Projects.FirstOrDefault(item => item.Id == projectId);
-                   
+                var recordInDb = _context.Projects.FirstOrDefault(item => item.ProjectStatusId == projectId);
+
 
                 if (recordInDb == null)
                 {
@@ -224,8 +224,8 @@ namespace INF370.Group6.API.Controllers
         public ActionResult<IEnumerable<GetProjectDto>> GetAllProjects()
         {
             var employeeTypesInDb = _context.Projects
-                .Include(item=>item.ProjectStatus)
-                .OrderBy(item=>item.StartDate)
+                .Include(item => item.ProjectStatus)
+                .OrderBy(item => item.StartDate)
                 .Select(item => new GetProjectDto
                 {
                     Id = item.Id,

@@ -151,7 +151,7 @@ namespace INF370.Group6.API.Controllers
         //Rentals
 
 
-        [HttpPost("Statuses/Add/{username}")]
+        [HttpPost("{username}")]
         public async Task<IActionResult> AddRental(AddorUpdateRentalDto model, string username)
         {
             var message = "";
@@ -162,7 +162,7 @@ namespace INF370.Group6.API.Controllers
 
                 if (statusInDb != null)
                 {
-                    message = "Error: Rental status  already exist.";
+                    message = "Error: Rental   already exist.";
                     return BadRequest(new { message });
                 }
 
@@ -187,7 +187,9 @@ namespace INF370.Group6.API.Controllers
             return BadRequest(new { message });
         }
 
-        [HttpPut("Statuses/Update/{username}/{id}")]
+    
+        [HttpPut("{username}/{id}")]
+
         public async Task<IActionResult> UpdateRental(AddorUpdateRentalDto model, string username, int id)
         {
             var message = "";
@@ -272,7 +274,7 @@ namespace INF370.Group6.API.Controllers
 
         //Rental Request
 
-        [HttpPost("Statuses/Add/{username}")]
+        [HttpPost("{username}")]
         public async Task<IActionResult> AddRentalRequest(AddRentalRequestDto model, string username)
         {
             var message = "";

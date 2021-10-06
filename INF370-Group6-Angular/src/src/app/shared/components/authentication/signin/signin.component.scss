@@ -1,0 +1,137 @@
+@import "/src/app/@theme/generic/colors.scss";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 100%;
+  background-color: #ffffff;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.25rem;
+  margin: 0;
+}
+
+.loader-container {
+  width: 448px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.loadbar {
+  height: 4px;
+  padding-top: 0;
+  margin-top: 0;
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.0625rem solid whitesmoke;
+  border-radius: 0.5rem;
+}
+mat-card-title {
+  display: flex;
+  justify-content: center;
+  font-variant-ligatures: common-ligatures;
+  font-style: normal;
+  font-weight: 300;
+  font-family: Montserrat,sans-serif;
+  line-height: 1.25;
+  margin-bottom: 15px;
+}
+mat-card-subtitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  color: red;
+  font-weight: 500;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-image {
+  width: 100px;
+  background-size: cover;
+}
+.form-field-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  flex: 1;
+}
+
+.forgot-password-text {
+  width: 448px;
+  height: 20px;
+  color: #1a73e8;
+  font-weight: 550;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.create-account-text{
+  display: flex;
+  text-align: end;
+  width: 149px;
+  height: 20px;
+  color: #1a73e8;
+  font-weight: 550;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+.form-field > mat-label {
+  width: 336px;
+  height: 22px;
+  padding: 12px 14px 12px 14px;
+  margin: 2px 2px 0 2px;
+  min-width: 0px;
+  min-height: auto;
+}
+
+.bottom-controls-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 448px;
+  margin: 20px 0 0 0;
+}
+
+.bottom-controls-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.signIn-button {
+  background: #1a73e8;
+  color: #ffffff;
+  width: 100%;
+  height: 36px;
+  margin-left: auto;
+}
+.signIn-button:disabled {
+  background: #1a73e8;
+  color: #ffffff;
+}
+.signUp-button {
+  color: #1a73e8;
+  background: #ffffff;
+
+  height: 36px;
+  margin-left: 0;
+}

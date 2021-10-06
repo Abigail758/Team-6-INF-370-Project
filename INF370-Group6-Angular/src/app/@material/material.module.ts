@@ -84,7 +84,9 @@ import { CustomErrorSnackBarComponent } from './custom-components/custom-error-s
     MatBottomSheetModule,
     MatTreeModule,
     
-    OverlayModule
+    
+    OverlayModule,
+    
 
   ],
   exports: [
@@ -125,6 +127,7 @@ import { CustomErrorSnackBarComponent } from './custom-components/custom-error-s
     MatBottomSheetModule,
     MatTreeModule,
     OverlayModule,
+    
 
     CustomSnackBarComponent,
     CustomErrorSnackBarComponent
