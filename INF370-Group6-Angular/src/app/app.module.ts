@@ -11,6 +11,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { JwtModule } from '@auth0/angular-jwt';
 import { environment } from 'src/environments/environment';
 import { HomeComponent } from './home/home/home.component';
+import { GlobalConfirmDeletionComponent } from './modals/global/global-confirm-deletion/global-confirm-deletion.component';
+import { GlobalErrorComponent } from './modals/global/global-error/global-error.component';
+import { GloConfirmAddeditComponent } from './modals/global/glo-confirm-addedit/glo-confirm-addedit.component';
 
 
 export function tokenGetter() {
@@ -20,7 +23,10 @@ export function tokenGetter() {
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    GlobalConfirmDeletionComponent,
+    GlobalErrorComponent,
+    GloConfirmAddeditComponent
    
   ],
   imports: [

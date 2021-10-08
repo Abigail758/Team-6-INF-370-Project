@@ -29,8 +29,9 @@ import {ListTenderComponent} from './pages/tender/manage-tender/list-tender/list
 import {ListSupplierComponent} from './pages/supplier/manage-supplier/list-supplier/list-supplier/list-supplier.component';
 import {ListTenderStatusComponent} from './pages/tender/tender-statuses/list-tender-statuses/list-tender-status/list-tender-status.component';
 import {ListSupplierTypeComponent} from './pages/supplier/supplier-types/list-supplier-types/list-supplier-type/list-supplier-type.component';
-
-
+import { ListClientsComponent } from './pages/clients/list-clients/list-clients.component';
+import { AddClientComponent } from './pages/clients/add-client/add-client.component';
+import { UpdateClientComponent } from './pages/clients/update-client/update-client.component';
 
 const routes: Routes = [
   {
@@ -59,6 +60,11 @@ const routes: Routes = [
 
       { path: 'tender-statuses', component: ListTenderStatusComponent },
       { path: 'supplier-types', component: ListSupplierTypeComponent },
+
+      { path: 'list-clients', component: ListClientsComponent },
+      { path: 'add-client', component: AddClientComponent },
+      { path: 'update-client', component: UpdateClientComponent },
+      
     ]
   }
 ];
