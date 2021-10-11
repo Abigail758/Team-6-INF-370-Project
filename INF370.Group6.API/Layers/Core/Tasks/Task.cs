@@ -2,11 +2,15 @@
 using System.ComponentModel.DataAnnotations;
 using INF370.Group6.API.Layers.Core.Phases;
 
+using INF370.Group6.API.Layers.Core.Equipments;
+using System.Collections.Generic;
+
 namespace INF370.Group6.API.Layers.Core.Tasks
 {
     public class Task
     {
-        public int Id { get; set; }
+        [Key] public int Id { get; set; }
+
         [Required]
         [MaxLength(500)]
         public string Name { get; set; }
@@ -21,5 +25,11 @@ namespace INF370.Group6.API.Layers.Core.Tasks
 
         public virtual TaskStatus TaskStatus { get; set; }
         public int TaskStatusId { get; set; }
+
+        // bridge table 
+     
+        public ICollection<TaskEquipment> TaskEquipments { get; set; }
     }
 }
+
+
