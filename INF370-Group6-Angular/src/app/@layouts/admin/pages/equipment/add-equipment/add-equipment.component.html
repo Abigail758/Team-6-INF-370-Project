@@ -1,0 +1,66 @@
+
+<div class="loader-container">
+    <mat-progress-bar *ngIf="showLoadingEndicator" mode="indeterminate"></mat-progress-bar>
+  </div>
+  <div class="container">
+    <mat-toolbar class="toolbar">
+      <span class="fill-remaining-space"></span>
+      <div class="dialog-header">
+        <div class="dialog-header-title">Add Equipment </div>
+        <div class="dialog-header-error-message" *ngIf="errorMessage">{{errorMessage}}</div>
+      </div>
+      <span class="fill-remaining-space"></span>
+    </mat-toolbar>
+  
+    <form [formGroup]="addForm" class="form" (ngSubmit)="onSubmit()">
+  
+  
+  
+        
+        <div class="field-container-inline">
+        <mat-form-field class="field-inline">
+          <mat-label>Equipment Name</mat-label>
+          <input matInput formControlName="EquipmentName" type="text" required>
+          <mat-error *ngIf="EquipmentName.touched && EquipmentName.invalid">
+            <div *ngIf="EquipmentName.errors.required">Equipment Name is required.</div>
+          </mat-error>
+        </mat-form-field>
+  
+        <mat-form-field class="field-inline">
+          <mat-label>Equipment Description</mat-label>
+          <input matInput formControlName="EquipmentDescription" type="text" required>
+          <mat-error *ngIf="EquipmentDescription.touched && EquipmentDescription.invalid">
+            <div *ngIf="EquipmentDescription.errors.required">Equipment Description is required.</div>
+          </mat-error>
+        </mat-form-field>
+      </div>
+  
+      <div class="field-container-inline">
+        <mat-form-field class="field-inline">
+          <mat-label>Equipment Condition</mat-label>
+          <input matInput formControlName="EquipmentCondition" type="text" required>
+          <mat-error *ngIf="EquipmentCondition.touched && EquipmentCondition.invalid">
+            <div *ngIf="EquipmentCondition.errors.required">Equipment Condition is required.</div>
+          </mat-error>
+        </mat-form-field>
+  
+        <mat-form-field class="field-inline">
+          <mat-label>Quantity</mat-label>
+          <input matInput formControlName="Quantity" type="text" required>
+          <mat-error *ngIf="Quantity.touched && Quantity.invalid">
+            <div *ngIf="Quantity.errors.required">Quantity is required.</div>
+          </mat-error>
+        </mat-form-field>
+  
+      
+      </div>
+  
+    
+  
+      <div class="button-row">
+        <button mat-button mat-dialog-close>Cancel </button>
+        <button mat-raised-button type="submit" class="button-submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  

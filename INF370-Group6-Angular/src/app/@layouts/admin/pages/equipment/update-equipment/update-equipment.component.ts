@@ -1,39 +1,36 @@
-import { ClientService } from './../../../../../@api/client/client.service';
+import { Equipment } from 'src/app/@api/equipment/equipment';
+import { EquipmentService } from './../../../../../@api/equipment/equipment.service';
 import { HttpEventType } from '@angular/common/http';
-import { Component, OnInit , Inject} from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { MatDialogRef , MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { AuthService } from 'src/app/@api/auth/auth.service';
-import { Client } from 'src/app/@api/client/client';
 import { CustomErrorSnackBarComponent } from 'src/app/@material/custom-components/custom-error-snack-bar/custom-error-snack-bar.component';
 
-
 @Component({
-  selector: 'app-update-client',
-  templateUrl: './update-client.component.html',
-  styleUrls: ['./update-client.component.scss']
+  selector: 'app-update-equipment',
+  templateUrl: './update-equipment.component.html',
+  styleUrls: ['./update-equipment.component.scss']
 })
-export class UpdateClientComponent implements OnInit {
-
+export class UpdateEquipmentComponent implements OnInit {
 
   errorMessage = "";
   showLoadingEndicator = false;
 
   updateForm : FormGroup;
-  recordToUpdate: Client;
+  recordToUpdate: Equipment;
 
  
 
   constructor(   
     private _authService: AuthService,
-    private _clientService: ClientService,
-
+    private _equipmentService: EquipmentService,
     private _formBuilder: FormBuilder,
     private _snackBar: MatSnackBar,
     private _ngxSpinner: NgxSpinnerService,
-    public dialogRef: MatDialogRef<UpdateClientComponent>,
+    public dialogRef: MatDialogRef<UpdateEquipmentComponent>,
     @Inject(MAT_DIALOG_DATA) dataFromParent: any,) {
 
     this.recordToUpdate = dataFromParent.recordToUpdate;
@@ -47,7 +44,7 @@ export class UpdateClientComponent implements OnInit {
   onSubmit() {
     this.errorMessage = "";
     if (this.updateForm.valid) {
-      this._clientService.updateClient(this.updateForm.value, this._authService.currentUser.UserName,this.recordToUpdate.id)    
+      this._equipmentService.updateEquipment(this.updateForm.value, this._authService.currentUser.UserName,this.recordToUpdate.id)    
       .subscribe(event => {
           if (event.type === HttpEventType.Sent) {
             this.showLoadingEndicator = true;
@@ -67,19 +64,20 @@ export class UpdateClientComponent implements OnInit {
 
   private createUpdateForm(_formBuilder: FormBuilder) {
     this.updateForm = _formBuilder.group({
-      ClientName: [this.recordToUpdate.clientName, Validators.required],
-      ClientAddress: [this.recordToUpdate.clientAddress, Validators.required],
-      ContactPerson: [this.recordToUpdate.contactPerson, Validators.required],
-      TelephoneNumbers: [this.recordToUpdate.TelephoneNumbers, Validators.required],
-      EmailAddress: [this.recordToUpdate.emailAddress, [Validators.required, Validators.email]],
+      EquipmentName: [this.recordToUpdate.equipmentName, Validators.required],
+      EquipmentDescription: [this.recordToUpdate.equipmentDescription, Validators.required],
+      EquipmentCondition: [this.recordToUpdate.equipmentCondition, Validators.required],
+      Quantity: [this.recordToUpdate.quantity, Validators.required],
+      
     });
   }
 
-  get ClientName() { return this.updateForm.get('ClientName'); }
-  get ClientAddress() { return this.updateForm.get('ClientAddress'); }
-  get ContactPerson() { return this.updateForm.get('ContactPerson'); }
-  get TelephoneNumbers() { return this.updateForm.get('TelephoneNumbers'); }
-  get EmailAddress() { return this.updateForm.get('EmailAddress'); }
+
+  get EquipmentName() { return this.updateForm.get('EquipmentName'); }
+  get EquipmentDescription() { return this.updateForm.get('EquipmentDescription'); }
+  get EquipmentCondition() { return this.updateForm.get('EquipmentCondition'); }
+  get Quantity() { return this.updateForm.get('Quantity'); }
+
 
   private closeDialog() {
     this.dialogRef.close({ event: 'Cancel' });
@@ -101,8 +99,5 @@ export class UpdateClientComponent implements OnInit {
       verticalPosition: 'bottom'
     });
   }
-
-
-
 
 }

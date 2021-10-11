@@ -61,7 +61,10 @@ import {AddTenderStatusComponent} from './pages/tender/tender-statuses/add-tende
 import {UpdateTenderStatusComponent} from './pages/tender/tender-statuses/update-tender-statuses/update-tender-status/update-tender-status.component';
 import { ListClientsComponent } from './pages/clients/list-clients/list-clients.component'; 
 import { AddClientComponent } from './pages/clients/add-client/add-client.component';
-import { UpdateClientComponent } from './pages/clients/update-client/update-client.component'; 
+import { UpdateClientComponent } from './pages/clients/update-client/update-client.component';
+import { AddEquipmentComponent } from './pages/equipment/add-equipment/add-equipment.component';
+import { ListEquipmentComponent } from './pages/equipment/list-equipment/list-equipment.component';
+import { UpdateEquipmentComponent } from './pages/equipment/update-equipment/update-equipment.component'; 
 
 @NgModule({
   declarations: [
@@ -124,6 +127,9 @@ import { UpdateClientComponent } from './pages/clients/update-client/update-clie
     ListClientsComponent,
     AddClientComponent,
     UpdateClientComponent,
+    AddEquipmentComponent,
+    ListEquipmentComponent,
+    UpdateEquipmentComponent,
 
     
   ],

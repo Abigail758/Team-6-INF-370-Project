@@ -3,11 +3,11 @@
     <mat-card class="mat-elevation-z8 table-header-container">
       <div class="table-top-controllers">
         <span class="table-name">Client |  </span>
-        <button mat-button (click)="onAddClient()" class="top-table-menu">Add New Client</button>
+        <button mat-button (click)="onAddEquipment()" class="top-table-menu">Add Equipment</button>
       </div>
   
       <mat-form-field>
-        <mat-label>Filter Clients</mat-label>
+        <mat-label>Filter Equipment</mat-label>
         <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium">
       </mat-form-field>
     </mat-card>
@@ -16,24 +16,24 @@
   
       <mat-table [dataSource]="dataSource" matSort class="table" #mytable>
   
-        <ng-container matColumnDef="clientName">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Client Name </mat-header-cell>
-          <mat-cell *matCellDef="let element"> {{element.clientName}} </mat-cell>
+        <ng-container matColumnDef="equipmentName">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Equipment Name </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.equipmentName}} </mat-cell>
         </ng-container>
   
-        <ng-container matColumnDef="clientAddress">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Client Address </mat-header-cell>
-          <mat-cell *matCellDef="let element"> {{element.clientAddress}} </mat-cell>
+        <ng-container matColumnDef="equipmentDescription">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Equipment Description </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.equipmentDescription}} </mat-cell>
         </ng-container>
   
-        <ng-container matColumnDef="contactPerson">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Contact Person </mat-header-cell>
-          <mat-cell *matCellDef="let element"> {{element.contactPerson}} </mat-cell>
+        <ng-container matColumnDef="equipmentCondition">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Equipment Condition</mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.equipmentCondition}} </mat-cell>
         </ng-container>
   
-        <ng-container matColumnDef="emailAddress">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Email </mat-header-cell>
-          <mat-cell *matCellDef="let element"> {{element.emailAddress}} </mat-cell>
+        <ng-container matColumnDef="quantity">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Quantity </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.quantity}} </mat-cell>
         </ng-container>
   
         
@@ -49,7 +49,7 @@
               <mat-icon class="icon-library">create</mat-icon>
             </button>
   
-            <button mat-button (click)="deleteClient(element)" matTooltip="Delete">
+            <button mat-button (click)="deleteEquipment(element)" matTooltip="Delete">
               <mat-icon class="icon-library">delete</mat-icon>
             </button>
   
@@ -78,3 +78,4 @@
     <p style="font-size: 20px; color: white">Please wait...</p>
   </ngx-spinner>
   
+

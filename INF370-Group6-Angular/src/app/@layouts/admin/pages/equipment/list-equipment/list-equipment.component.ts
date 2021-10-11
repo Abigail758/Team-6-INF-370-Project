@@ -1,3 +1,4 @@
+
 import { GlobalConfirmDeletionComponent } from './../../../../../modals/global/global-confirm-deletion/global-confirm-deletion.component';
 import { HttpEventType } from '@angular/common/http';
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -9,49 +10,47 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { AuthService } from 'src/app/@api/auth/auth.service';
-import { ClientService } from 'src/app/@api/client/client.service';
-import { Client } from 'src/app/@api/client/client';
+import { EquipmentService } from 'src/app/@api/equipment/equipment.service'; 
 import { CustomErrorSnackBarComponent } from 'src/app/@material/custom-components/custom-error-snack-bar/custom-error-snack-bar.component';
-import { AddClientComponent } from '../add-client/add-client.component';
-import { UpdateClientComponent } from '../update-client/update-client.component';
+import { AddEquipmentComponent } from '../add-equipment/add-equipment.component'; 
+import { UpdateEquipmentComponent } from '../update-equipment/update-equipment.component'; 
+import { Equipment } from 'src/app/@api/equipment/equipment';
 
 
 @Component({
-  selector: 'app-list-clients',
-  templateUrl: './list-clients.component.html',
-  styleUrls: ['./list-clients.component.scss']
+  selector: 'app-list-equipment',
+  templateUrl: './list-equipment.component.html',
+  styleUrls: ['./list-equipment.component.scss']
 })
+export class ListEquipmentComponent implements OnInit {
+  displayedColumns: string[] = ['equipmentName', 'equipmentDescription', 'equipmentCondition', 'quantity', 'actions'];
 
-export class ListClientsComponent implements OnInit {
-  displayedColumns: string[] = ['clientName', 'clientAddress', 'contactPerson', 'emailAddress', 'actions'];
   dataSource: any;
-  listOfRecords: Client[] = [];
-  record: Client;
+  listOfRecords: Equipment[] = [];
+  record: Equipment;
   @ViewChild(MatSort, { static: true }) sort: MatSort;
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
 
-
-  constructor(
+  constructor(    
     private _authService: AuthService,
-    private _clientService: ClientService,
+    private _equipmentService: EquipmentService,
     private _router: Router,
     private _dialog: MatDialog,
     private _snackBar: MatSnackBar,
-    private _ngxSpinner: NgxSpinnerService,
-  ) { }
+    private _ngxSpinner: NgxSpinnerService,) { }
 
-  
 
   ngOnInit(): void {
   }
+
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
-  onAddClient() {
-    let dialogRef = this._dialog.open(AddClientComponent, {
+  onAddEquipment() {
+    let dialogRef = this._dialog.open(AddEquipmentComponent, {
       width: "50%",
       height: "auto"
     });
@@ -60,8 +59,8 @@ export class ListClientsComponent implements OnInit {
     })
   }
 
-  onUpdateRecord(record: Client) {
-    let dialogRef = this._dialog.open(UpdateClientComponent, {
+  onUpdateRecord(record: Equipment) {
+    let dialogRef = this._dialog.open(UpdateEquipmentComponent, {
       width: "50%",
       height: "auto",
       data: {
@@ -87,14 +86,14 @@ export class ListClientsComponent implements OnInit {
   //    });
   // }
 
-  deleteClient(id: number ) {
+  deleteEquipment(id: number ) {
     const confirm = this._dialog.open(GlobalConfirmDeletionComponent, {
         disableClose: true,
     });
 
     confirm.afterClosed().subscribe(res => {
       if(res) {
-        this._clientService.deleteClient( this._authService.currentUser.UserName,this.record.id);
+        this._equipmentService.deleteEquipment( this._authService.currentUser.UserName,this.record.id);
         this.getRecordsFromServer();
       }
     });
@@ -103,15 +102,15 @@ export class ListClientsComponent implements OnInit {
  
 
   private getRecordsFromServer() {
-    this._clientService.getAllClients().subscribe(event => {
+    this._equipmentService.getAllEquipment().subscribe(event => {
       if (event.type === HttpEventType.Sent) {
         this._ngxSpinner.show();
       }
       if (event.type === HttpEventType.Response) {
         this._ngxSpinner.hide();
-        this.listOfRecords = event.body as Client[];
+        this.listOfRecords = event.body as Equipment[];
 
-        this.dataSource = new MatTableDataSource<Client>(this.listOfRecords);
+        this.dataSource = new MatTableDataSource<Equipment>(this.listOfRecords);
         this.dataSource.sort = this.sort;
         this.dataSource.paginator = this.paginator;
       }
@@ -139,6 +138,5 @@ export class ListClientsComponent implements OnInit {
       verticalPosition: 'bottom'
     });
   }
-
 
 }

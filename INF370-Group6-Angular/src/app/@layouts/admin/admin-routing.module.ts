@@ -32,6 +32,9 @@ import {ListSupplierTypeComponent} from './pages/supplier/supplier-types/list-su
 import { ListClientsComponent } from './pages/clients/list-clients/list-clients.component';
 import { AddClientComponent } from './pages/clients/add-client/add-client.component';
 import { UpdateClientComponent } from './pages/clients/update-client/update-client.component';
+import { ListEquipmentComponent } from './pages/equipment/list-equipment/list-equipment.component'; 
+import { AddEquipmentComponent } from './pages/equipment/add-equipment/add-equipment.component'; 
+import { UpdateEquipmentComponent } from './pages/equipment/update-equipment/update-equipment.component';
 
 const routes: Routes = [
   {
@@ -65,6 +68,9 @@ const routes: Routes = [
       { path: 'add-client', component: AddClientComponent },
       { path: 'update-client', component: UpdateClientComponent },
       
+      { path: 'list-equipment', component: ListEquipmentComponent },
+      { path: 'add-equipment', component: AddEquipmentComponent },
+      { path: 'update-equipment', component: UpdateEquipmentComponent },
     ]
   }
 ];
