@@ -1,0 +1,49 @@
+
+<div class="loader-container">
+  <mat-progress-bar *ngIf="showLoadingEndicator" mode="indeterminate"></mat-progress-bar>
+</div>
+<mat-card class="card-container">
+
+  <div class="image-container">
+    <!-- <img src="assets/images/logo.png" class="header-image"> -->
+  </div>
+
+  <mat-card-content>
+    <div>
+      <mat-card-title>Sign In</mat-card-title>
+      <mat-card-subtitle *ngIf="errorMessage">{{errorMessage}}</mat-card-subtitle>
+    </div>
+
+    <form [formGroup]="loginForm" (ngSubmit)="signIn()">
+      <div class="form-field-container">
+        <mat-form-field class="form-field" appearance="outline">
+          <mat-label>Username</mat-label>
+          <input type="text" matInput formControlName="UserName">
+          <mat-error *ngIf="UserName.touched && UserName.invalid">
+            <div *ngIf="UserName.errors.required">please provide your Username.</div>
+            <div *ngIf="UserName.errors.email"> Please provide valid email.</div>
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="form-field-container">
+        <mat-form-field class="form-field" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input type="password" matInput formControlName="Password">
+          <mat-error *ngIf="Password.touched && Password.invalid">
+            <div *ngIf="Password.errors.required">please provide password.</div>
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="bottom-controls-container">
+        <button class="signIn-button" type="submit" mat-button
+          disabled="{{submitButtonDiabled}}">{{submitButtonText}}</button>
+        <div class="bottom-controls-links">
+          <div class="forgot-password-text" (click)="forgotPassword()">Forgot Password?</div>
+        </div>
+
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

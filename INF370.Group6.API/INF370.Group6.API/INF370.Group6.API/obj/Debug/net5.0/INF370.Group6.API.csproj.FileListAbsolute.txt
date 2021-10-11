@@ -1,0 +1,330 @@
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\appsettings.json
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.exe
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.deps.json
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.runtimeconfig.json
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.runtimeconfig.dev.json
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\ref\INF370.Group6.API.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.pdb
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Humanizer.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.csproj.AssemblyReference.cache
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.AssemblyInfoInputs.cache
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.AssemblyInfo.cs
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.csproj.CoreCompileInputs.cache
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\staticwebassets\INF370.Group6.API.StaticWebAssets.Manifest.cache
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\staticwebassets\INF370.Group6.API.StaticWebAssets.xml
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\scopedcss\bundle\INF370.Group6.API.styles.css
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.RazorTargetAssemblyInfo.cache
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.csproj.CopyComplete
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\ref\INF370.Group6.API.dll
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.pdb
+C:\Users\mankg\Desktop\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.genruntimeconfig.cache
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\appsettings.json
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.exe
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.deps.json
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.runtimeconfig.json
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.runtimeconfig.dev.json
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\ref\INF370.Group6.API.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.pdb
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Humanizer.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.csproj.AssemblyReference.cache
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.AssemblyInfoInputs.cache
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.AssemblyInfo.cs
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.csproj.CoreCompileInputs.cache
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\staticwebassets\INF370.Group6.API.StaticWebAssets.Manifest.cache
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\staticwebassets\INF370.Group6.API.StaticWebAssets.xml
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\scopedcss\bundle\INF370.Group6.API.styles.css
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.RazorTargetAssemblyInfo.cache
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.csproj.CopyComplete
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\ref\INF370.Group6.API.dll
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.pdb
+C:\Users\mankg\Desktop\XYZ\Abigail\Dev\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.genruntimeconfig.cache
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\appsettings.json
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.exe
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.deps.json
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.runtimeconfig.json
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.runtimeconfig.dev.json
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\ref\INF370.Group6.API.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.pdb
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Humanizer.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.csproj.AssemblyReference.cache
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.AssemblyInfoInputs.cache
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.AssemblyInfo.cs
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.csproj.CoreCompileInputs.cache
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\staticwebassets\INF370.Group6.API.StaticWebAssets.Manifest.cache
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\staticwebassets\INF370.Group6.API.StaticWebAssets.xml
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\scopedcss\bundle\INF370.Group6.API.styles.css
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.RazorTargetAssemblyInfo.cache
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.csproj.CopyComplete
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\ref\INF370.Group6.API.dll
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.pdb
+C:\Users\27825\Documents\GitHub\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.genruntimeconfig.cache
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\appsettings.json
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.exe
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.deps.json
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.runtimeconfig.json
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.runtimeconfig.dev.json
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\ref\INF370.Group6.API.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.pdb
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Humanizer.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.csproj.AssemblyReference.cache
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.AssemblyInfoInputs.cache
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.AssemblyInfo.cs
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\staticwebassets\INF370.Group6.API.StaticWebAssets.Manifest.cache
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\staticwebassets\INF370.Group6.API.StaticWebAssets.xml
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\scopedcss\bundle\INF370.Group6.API.styles.css
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.RazorTargetAssemblyInfo.cache
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.csproj.CopyComplete
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\ref\INF370.Group6.API.dll
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.pdb
+C:\Users\user\Documents\INF-370-System\Team-6-INF-370-Project\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.genruntimeconfig.cache
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\appsettings.json
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.exe
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.deps.json
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.runtimeconfig.json
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.runtimeconfig.dev.json
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\ref\INF370.Group6.API.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\INF370.Group6.API.pdb
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.csproj.AssemblyReference.cache
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.AssemblyInfoInputs.cache
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.AssemblyInfo.cs
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.csproj.CoreCompileInputs.cache
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\obj\Debug\net5.0\staticwebassets\INF370.Group6.API.StaticWebAssets.Manifest.cache
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\obj\Debug\net5.0\staticwebassets\INF370.Group6.API.StaticWebAssets.xml
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\obj\Debug\net5.0\scopedcss\bundle\INF370.Group6.API.styles.css
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.RazorTargetAssemblyInfo.cache
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.csproj.CopyComplete
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\obj\Debug\net5.0\ref\INF370.Group6.API.dll
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.pdb
+C:\Users\Zanele\Downloads\Team-6-INF-370-Project-Abigail (1)\Team-6-INF-370-Project-Abigail\INF370.Group6.API\obj\Debug\net5.0\INF370.Group6.API.genruntimeconfig.cache

@@ -1,0 +1,42 @@
+<div class="loader-container">
+  <mat-progress-bar *ngIf="showLoadingEndicator" mode="indeterminate"></mat-progress-bar>
+</div>
+<div class="container">
+  <mat-toolbar class="toolbar">
+    <span class="fill-remaining-space"></span>
+    <div class="dialog-header">
+      <div class="dialog-header-title">Add Task Status </div>
+      <div class="dialog-header-error-message" *ngIf="errorMessage">{{errorMessage}}</div>
+    </div>
+    <span class="fill-remaining-space"></span>
+  </mat-toolbar>
+
+  <form [formGroup]="addFrom" class="form" (ngSubmit)="onSubmit()">
+
+    <div class="field-container-inline">
+      <mat-form-field class="field-inline">
+        <mat-label>Task Status</mat-label>
+        <input matInput formControlName="Name" type="text" required>
+        <mat-error *ngIf="Name.touched && Name.invalid">
+          <div *ngIf="Name.errors.required">Status is required.</div>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="field-container-inline">
+
+      <mat-form-field class="field-inline">
+        <mat-label>Status Description</mat-label>
+        <input matInput formControlName="Description" type="text" required>
+        <mat-error *ngIf="Description.touched && Description.invalid">
+          <div *ngIf="Description.errors.required">Description is required.</div>
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+
+    <div class="button-row">
+      <button mat-button mat-dialog-close>Cancel </button>
+      <button mat-raised-button type="submit" class="button-submit">Submit</button>
+    </div>
+  </form>
+</div>
