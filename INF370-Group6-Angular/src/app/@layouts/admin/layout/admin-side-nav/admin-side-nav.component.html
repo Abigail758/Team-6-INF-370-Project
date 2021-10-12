@@ -1,7 +1,7 @@
 <mat-nav-list>
   <div class="profile-card">
       <div class="header">
-          <h2>Sustainable System Solutions </h2>
+          <h2>GabriQ Group</h2>
       </div>
   </div>
   <a mat-list-item routerLinkActive="list-item-active" [routerLink]="['/admin/dashboard']">Dashboard</a>
@@ -9,8 +9,8 @@
   <mat-divider></mat-divider>
 
   <h2 matSubheader class="sub-header">Projects</h2>
-  <a mat-list-item [routerLink]="['/admin/projects']" class="menu-item">Manage Projects</a>
-  <a mat-list-item routerLinkActive="list-item-active" [routerLink]="['/admin/project-statuses']" class="menu-item">Manage Project Statuses</a>
+  <a mat-list-item [routerLink]="['/admin/projects']"  class="menu-item">Manage Projects</a>
+  <a mat-list-item routerLinkActive="list-item-active" [routerLink]="['/admin/project-statuses']"  class="menu-item">Manage Project Statuses</a>
   <a mat-list-item routerLinkActive="list-item-active" [routerLink]="['/admin/phase-statuses']" class="menu-item">Manage  Phase Statuses</a>
   <a mat-list-item routerLinkActive="list-item-active" [routerLink]="['/admin/task-statuses']" class="menu-item">Manage  Task Statuses</a>
 
@@ -21,9 +21,35 @@
   <a mat-list-item [routerLink]="['/admin/employees']" class="menu-item">Manage Employees</a>
   <a mat-list-item routerLinkActive="list-item-active" [routerLink]="['/admin/employee-types']" class="menu-item">Manage Employee Types</a>
 
+ <mat-divider></mat-divider>
+  <a mat-list-item [routerLink]="['/admin/suppliers']" class="menu-item">Manage Suppliers</a>
+  <a mat-list-item routerLinkActive="list-item-active" [routerLink]="['/admin/supplier-types']" class="menu-item">Manage Supplier Types</a>
+ 
+ <mat-divider></mat-divider>
+  <h2 matSubheader class="sub-header">Tenders</h2>
+  <a mat-list-item [routerLink]="['/admin/tenders']" class="menu-item">Manage Tenders</a>
+  <a mat-list-item routerLinkActive="list-item-active" [routerLink]="['/admin/tender-statuses']" class="menu-item">Manage Tender Statuses</a>
+
+
 
   <h2 matSubheader class="sub-header">Setup</h2>
   <a mat-list-item [routerLink]="['/admin/app-roles']" class="menu-item">Manage App Roles</a>
+
+
+  <h2 matSubheader class="sub-header">Clients</h2>
+  <a mat-list-item [routerLink]="['/admin/list-clients']" class="menu-item"> Manage Clients</a>
+
+  
+    
+  <h2 matSubheader class="sub-header">Equipment</h2>
+  <a mat-list-item [routerLink]="['/admin/list-equipment']" class="menu-item">Manage Equipment</a>
+
+  <h2 matSubheader class="sub-header">Reports</h2>
+  <a mat-list-item [routerLink]="['/admin/report-main']" class="menu-item">Reports</a>
+
+  <h2 matSubheader class="sub-header">Rentals</h2>
+  <a mat-list-item [routerLink]="['/admin/rental']" class="menu-item"> Manage Rentals</a>
+  <a mat-list-item [routerLink]="['/admin/rental-status']" class="menu-item"> Manage Rental Statuses</a>
 
 
 </mat-nav-list>

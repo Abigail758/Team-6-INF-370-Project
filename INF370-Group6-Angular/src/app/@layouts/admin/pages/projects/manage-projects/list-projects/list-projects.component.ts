@@ -89,7 +89,7 @@ export class ListProjectsComponent implements OnInit {
     // });
   }
 
-  onManagePhases(record:Project){
+   onManagePhases(record:Project){
     let dialogRef = this._dialog.open(ListPhasesComponent, {
       width: "80%",
       height: "auto",

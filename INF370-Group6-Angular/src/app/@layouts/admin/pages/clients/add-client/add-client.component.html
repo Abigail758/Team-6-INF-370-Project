@@ -1,0 +1,73 @@
+
+<div class="loader-container">
+    <mat-progress-bar *ngIf="showLoadingEndicator" mode="indeterminate"></mat-progress-bar>
+  </div>
+  <div class="container">
+    <mat-toolbar class="toolbar">
+      <span class="fill-remaining-space"></span>
+      <div class="dialog-header">
+        <div class="dialog-header-title">Add Client </div>
+        <div class="dialog-header-error-message" *ngIf="errorMessage">{{errorMessage}}</div>
+      </div>
+      <span class="fill-remaining-space"></span>
+    </mat-toolbar>
+  
+    <form [formGroup]="addForm" class="form" (ngSubmit)="onSubmit()">
+  
+  
+  
+        
+        <div class="field-container-inline">
+        <mat-form-field class="field-inline">
+          <mat-label>Client Name</mat-label>
+          <input matInput formControlName="ClientName" type="text" required>
+          <mat-error *ngIf="ClientName.touched && ClientName.invalid">
+            <div *ngIf="ClientName.errors.required">Client Name is required.</div>
+          </mat-error>
+        </mat-form-field>
+  
+        <mat-form-field class="field-inline">
+          <mat-label>Client Address</mat-label>
+          <input matInput formControlName="ClientAddress" type="text" required>
+          <mat-error *ngIf="ClientAddress.touched && ClientAddress.invalid">
+            <div *ngIf="ClientAddress.errors.required">Client Address is required.</div>
+          </mat-error>
+        </mat-form-field>
+      </div>
+  
+      <div class="field-container-inline">
+        <mat-form-field class="field-inline">
+          <mat-label>Contact Person</mat-label>
+          <input matInput formControlName="ContactPerson" type="text" required>
+          <mat-error *ngIf="ContactPerson.touched && ContactPerson.invalid">
+            <div *ngIf="ContactPerson.errors.required">Contact Person is required.</div>
+          </mat-error>
+        </mat-form-field>
+  
+        <mat-form-field class="field-inline">
+          <mat-label>Telephone Number</mat-label>
+          <input matInput formControlName="TelephoneNumbers" type="text" required>
+          <mat-error *ngIf="TelephoneNumbers.touched && TelephoneNumbers.invalid">
+            <div *ngIf="TelephoneNumbers.errors.required">Phone Number is required.</div>
+          </mat-error>
+        </mat-form-field>
+  
+        <mat-form-field class="field-inline">
+          <mat-label>Email </mat-label>
+          <input matInput formControlName="EmailAddress" type="email" required>
+          <mat-error *ngIf="EmailAddress.touched && EmailAddress.invalid">
+            <div *ngIf="EmailAddress.errors.required">Email is required.</div>
+            <div *ngIf="EmailAddress.errors.email">Provide valid email address.</div>
+          </mat-error>
+        </mat-form-field>
+      </div>
+  
+    
+  
+      <div class="button-row">
+        <button mat-button mat-dialog-close>Cancel </button>
+        <button mat-raised-button type="submit" class="button-submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  

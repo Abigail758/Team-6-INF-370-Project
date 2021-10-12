@@ -19,6 +19,43 @@ namespace INF370.Group6.API.Migrations
                 .HasAnnotation("ProductVersion", "5.0.10")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("INF370.Group6.API.Layers.Core.Clients.Client", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ClientAddress")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("ClientName")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("ContactPerson")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("EmailAddress")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("TelephoneNumbers")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Clients");
+                });
+
             modelBuilder.Entity("INF370.Group6.API.Layers.Core.Employee", b =>
                 {
                     b.Property<int>("Id")
@@ -65,6 +102,36 @@ namespace INF370.Group6.API.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("EmployeeTypes");
+                });
+
+            modelBuilder.Entity("INF370.Group6.API.Layers.Core.Equipments.Equipment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("EquipmentCondition")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("EquipmentDescription")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("EquipmentName")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Equipments");
                 });
 
             modelBuilder.Entity("INF370.Group6.API.Layers.Core.Identity.AppUser", b =>
@@ -263,6 +330,101 @@ namespace INF370.Group6.API.Migrations
                     b.ToTable("ProjectStatuses");
                 });
 
+            modelBuilder.Entity("INF370.Group6.API.Layers.Core.Rental.Rental", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("RentalName")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int>("RentalRequestId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RentalStatusId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("RentalStatusType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Rental_Cost")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RentalRequestId");
+
+                    b.HasIndex("RentalStatusId");
+
+                    b.ToTable("Rentals");
+                });
+
+            modelBuilder.Entity("INF370.Group6.API.Layers.Core.Rental.RentalRequest", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<string>("RentalItem")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<int>("RentalRequestStatusId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("RequestDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RentalRequestStatusId");
+
+                    b.ToTable("RentalRequests");
+                });
+
+            modelBuilder.Entity("INF370.Group6.API.Layers.Core.Rental.RentalRequestStatus", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Status_Type")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("RentalRequestStatuses");
+                });
+
+            modelBuilder.Entity("INF370.Group6.API.Layers.Core.Rental.RentalStatus", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("StatusType")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("RentalStatuses");
+                });
+
             modelBuilder.Entity("INF370.Group6.API.Layers.Core.Tasks.Task", b =>
                 {
                     b.Property<int>("Id")
@@ -317,6 +479,34 @@ namespace INF370.Group6.API.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TaskStatuses");
+                });
+
+            modelBuilder.Entity("INF370.Group6.API.Layers.Core.Tender.TenderRequest", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AdvertisementDocument")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ClientId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("TenderName")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClientId");
+
+                    b.ToTable("TenderRequest");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -510,6 +700,36 @@ namespace INF370.Group6.API.Migrations
                     b.Navigation("ProjectStatus");
                 });
 
+            modelBuilder.Entity("INF370.Group6.API.Layers.Core.Rental.Rental", b =>
+                {
+                    b.HasOne("INF370.Group6.API.Layers.Core.Rental.RentalRequest", "RentalRequest")
+                        .WithMany()
+                        .HasForeignKey("RentalRequestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("INF370.Group6.API.Layers.Core.Rental.RentalStatus", "RentalStatus")
+                        .WithMany("Rentals")
+                        .HasForeignKey("RentalStatusId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("RentalRequest");
+
+                    b.Navigation("RentalStatus");
+                });
+
+            modelBuilder.Entity("INF370.Group6.API.Layers.Core.Rental.RentalRequest", b =>
+                {
+                    b.HasOne("INF370.Group6.API.Layers.Core.Rental.RentalRequestStatus", "RentalRequestStatus")
+                        .WithMany("RentalRequests")
+                        .HasForeignKey("RentalRequestStatusId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("RentalRequestStatus");
+                });
+
             modelBuilder.Entity("INF370.Group6.API.Layers.Core.Tasks.Task", b =>
                 {
                     b.HasOne("INF370.Group6.API.Layers.Core.Phases.Phase", "Phase")
@@ -527,6 +747,17 @@ namespace INF370.Group6.API.Migrations
                     b.Navigation("Phase");
 
                     b.Navigation("TaskStatus");
+                });
+
+            modelBuilder.Entity("INF370.Group6.API.Layers.Core.Tender.TenderRequest", b =>
+                {
+                    b.HasOne("INF370.Group6.API.Layers.Core.Clients.Client", "Client")
+                        .WithMany("TenderRequests")
+                        .HasForeignKey("ClientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Client");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -580,6 +811,11 @@ namespace INF370.Group6.API.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("INF370.Group6.API.Layers.Core.Clients.Client", b =>
+                {
+                    b.Navigation("TenderRequests");
+                });
+
             modelBuilder.Entity("INF370.Group6.API.Layers.Core.EmployeeType", b =>
                 {
                     b.Navigation("Employees");
@@ -603,6 +839,16 @@ namespace INF370.Group6.API.Migrations
             modelBuilder.Entity("INF370.Group6.API.Layers.Core.Projects.ProjectStatuses.ProjectStatus", b =>
                 {
                     b.Navigation("Projects");
+                });
+
+            modelBuilder.Entity("INF370.Group6.API.Layers.Core.Rental.RentalRequestStatus", b =>
+                {
+                    b.Navigation("RentalRequests");
+                });
+
+            modelBuilder.Entity("INF370.Group6.API.Layers.Core.Rental.RentalStatus", b =>
+                {
+                    b.Navigation("Rentals");
                 });
 
             modelBuilder.Entity("INF370.Group6.API.Layers.Core.Tasks.TaskStatus", b =>

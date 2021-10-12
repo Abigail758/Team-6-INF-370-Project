@@ -1,0 +1,52 @@
+.top-card-container {
+  margin-top: 2em;
+  width: 90%;
+}
+
+.top-card-container-header{
+  display: flex;
+  justify-content: center;
+
+  mat-card-title{
+    color: $general-global-color-text;
+  }
+}
+
+.middle-card-container {
+  margin: 1em 0;
+  width: 90%;
+}
+
+.middle-card-container-with-background {
+  margin: 1em 0;
+  background-color: $controlers-secondary-forebackground-color;
+}
+
+.buttom-card-container {
+  width: 90%;
+}
+
+.control-button{
+  color: $general-global-color-primary;
+  margin: 3em 2em 2em 2em;
+}
+
+.table {
+  width: 100%;
+  height: auto;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+// .mat-row:hover + .hide {
+//   background-color: $general-global-color-primary-light;
+//   display: block;
+// }
+
+
+// .hide {
+//   display: none;
+// }
