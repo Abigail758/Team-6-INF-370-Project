@@ -30,15 +30,23 @@
         <mat-cell *matCellDef="let element"> {{element.description}} </mat-cell>
       </ng-container>
 
-      <ng-container matColumnDef="dateSubmitted">
-        <mat-header-cell *matHeaderCellDef mat-sort-header>Date Submitted </mat-header-cell>
-        <mat-cell *matCellDef="let element"> {{element.dateSubmitted}} </mat-cell>
-      </ng-container>
 
       <ng-container matColumnDef="tenderSource">
         <mat-header-cell *matHeaderCellDef mat-sort-header> Tender Source </mat-header-cell>
         <mat-cell *matCellDef="let element"> {{element.tenderSource}} </mat-cell>
       </ng-container>
+
+      <ng-container matColumnDef="dateSubmitted">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Date Submitted </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.dateSubmitted}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="clientName">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Client Name</mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.clientName}} </mat-cell>
+      </ng-container>
+
+
 
 
 

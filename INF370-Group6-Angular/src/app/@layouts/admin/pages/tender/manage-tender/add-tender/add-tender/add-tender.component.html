@@ -5,7 +5,7 @@
   <mat-toolbar class="toolbar">
     <span class="fill-remaining-space"></span>
     <div class="dialog-header">
-      <div class="dialog-header-title">Add new {{tender.name}} Proposed Tender </div>
+      <div class="dialog-header-title">Add new Proposed Tender </div>
       <div class="dialog-header-error-message" *ngIf="errorMessage">{{errorMessage}}</div>
     </div>
     <span class="fill-remaining-space"></span>
@@ -17,9 +17,7 @@
       <mat-form-field class="field-inline">
         <mat-label>Tender Status</mat-label>
         <mat-select formControlName=" tenderStatusId">
-          <mat-option *ngFor="let status of listOfTenderStatuses" [value]="status.id">
-            {{status.name}}
-          </mat-option>
+         <mat-option value="Submitted">Submitted</mat-option>
         </mat-select>
         <mat-error *ngIf=" TenderStatusId.touched &&  TenderStatusId.invalid">
           <div *ngIf=" TenderStatusId.errors.required">Status is required.</div>
@@ -55,6 +53,8 @@
       </mat-form-field>
     </div>
 
+    
+
     <div class="field-container-inline">
       <mat-form-field class="field-inline">
         <mat-label>Date Submitted</mat-label>
@@ -67,9 +67,43 @@
       </mat-form-field>
     </div>
 
+      <div class="field-container-inline">
+        <mat-form-field class="field-inline">
+        <mat-label>Client Name</mat-label>
+        <input matInput formControlName="clientName" type="text" required>
+        <mat-error *ngIf="clientName.touched && clientName.invalid">
+          <div *ngIf="clientName.errors.required">Client name is required.</div>
+        </mat-error>
+      </mat-form-field>
+      </div>
+
+
     <div class="button-row">
       <button mat-button mat-dialog-close>Cancel </button>
-      <button mat-raised-button type="submit" class="button-submit">Submit</button>
+      <button mat-raised-button type="submit" class="button-submit">Add</button>
     </div>
   </form>
+
+       <div class="text-center">
+    <input class="form-control" type="file" 
+            (change)="onChange($event)">
+  
+    <button (click)="onUpload()" 
+        class="btn btn-success">
+        Add tender advertisment document
+    </button>
+</div>
+  
+<!-- Shareable short link of  uoloaded file -->
+<div class="container text-center jumbotron"
+    *ngIf="shortLink">
+    <h2> View File</h2>
+    <a href="{{shortLink}}">{{shortLink}}</a>
+</div>
+  
+<!--Flag variable is used here-->
+  <div class="container" *ngIf="loading">
+    <h3>Loading ...</h3>
+   </div>
+
 </div>

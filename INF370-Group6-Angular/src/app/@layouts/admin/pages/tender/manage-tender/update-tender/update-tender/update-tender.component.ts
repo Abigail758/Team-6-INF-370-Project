@@ -2,7 +2,7 @@ import { Tender, TenderStatus } from './../../../../../../../@api/tender/tender'
 import { HttpEventType } from '@angular/common/http';
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { AuthService } from 'src/app/@api/auth/auth.service';
@@ -30,6 +30,7 @@ export class UpdateTenderComponent implements OnInit {
     private _tenderService: TenderService,
     private _formBuilder: FormBuilder,
     private _snackBar: MatSnackBar,
+    public dialog: MatDialog,
     public dialogRef: MatDialogRef<UpdateTenderComponent>,
     private _ngxSpinner: NgxSpinnerService,
     @Inject(MAT_DIALOG_DATA) dataFromParent: any,
@@ -87,6 +88,7 @@ export class UpdateTenderComponent implements OnInit {
       TenderSource: [this.recordToUpdate.tenderSource, Validators.required],
       TenderStatus: [this.recordToUpdate.tenderStatusName, Validators.required],
       TenderStatusId: [this.recordToUpdate.tenderStatusId, Validators.required],
+      clientName: [this.recordToUpdate.clientName, Validators.required],
     });
   }
   get Name() { return this.updateForm.get('Name'); }
@@ -95,6 +97,7 @@ export class UpdateTenderComponent implements OnInit {
   get TenderSource() { return this.updateForm.get('TenderSource'); }
   get TenderStatus() { return this.updateForm.get('TenderStatus'); }
   get TenderStatusId() { return this.updateForm.get('TenderStatusId'); }
+  get clientName() { return this.updateForm.get('clientName'); }
 
   private closeDialog() {
     this.dialogRef.close({ event: 'Cancel' });
@@ -117,5 +120,11 @@ export class UpdateTenderComponent implements OnInit {
     });
   }
 
-  
+  openDialog() {
+    const dialogRef = this.dialog.open(UpdateTenderComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 }

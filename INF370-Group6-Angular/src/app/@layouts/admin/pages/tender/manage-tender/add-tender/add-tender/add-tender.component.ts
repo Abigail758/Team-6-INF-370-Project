@@ -25,6 +25,11 @@ export class AddTenderComponent implements OnInit {
 
   tender: Tender;
 
+    // Variable to store shortLink from api response
+    shortLink: string = "";
+    loading: boolean = false; // Flag variable
+    file: File = null; // Variable to store file
+
 
   constructor(
     private _authService: AuthService,
@@ -71,7 +76,8 @@ export class AddTenderComponent implements OnInit {
       DateSubmitted: ["", Validators.required],
       TenderSource: ["", Validators.required],
       TenderStatusName: ["", Validators.required],
-      TenderStatusId: ["", Validators.required]
+      TenderStatusId: ["", Validators.required],
+      clientName: ["", Validators.required]
     });
   }
   get Name() { return this.addFrom.get('Name'); }
@@ -80,6 +86,7 @@ export class AddTenderComponent implements OnInit {
   get  TenderSource() { return this.addFrom.get( 'TenderSource'); }
   get TenderStatusName() { return this.addFrom.get('TenderStatusName'); }
   get  TenderStatusId() { return this.addFrom.get(' TenderStatusId'); }
+  get clientName() { return this.addFrom.get('clientName'); }
  
 
 
@@ -120,5 +127,28 @@ export class AddTenderComponent implements OnInit {
       verticalPosition: 'bottom'
     });
   }
+
+
+  // On file Select
+ onChange(event) {
+  this.file = event.target.files[0];
+}
+
+// OnClick of button Upload
+onUpload() {
+  this.loading = !this.loading;
+  console.log(this.file);
+  this._tenderService.upload(this.file).subscribe(
+      (event: any) => {
+          if (typeof (event) === 'object') {
+
+              // Short link via api response
+              this.shortLink = event.link;
+
+              this.loading = false; // Flag variable 
+          }
+      }
+  );
+}
 
 }
