@@ -28,7 +28,7 @@ namespace INF370.Group6.API.Layers.Core.Tasks
 
         // bridge table 
      
-        public ICollection<TaskEquipment> TaskEquipments { get; set; }
+        public ICollection<Equipment> Equipment { get; set; }
     }
 }
 

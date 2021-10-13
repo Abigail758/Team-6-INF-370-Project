@@ -39,16 +39,7 @@ namespace INF370.Group6.API.Layers.Data.Context
                .WithOne(b => b.AppUser)
                .HasForeignKey<Employee>(b => b.AppUserId);
 
-            builder.Entity<TaskEquipment>()
-       .HasKey(bc => new { bc.EquipmentId, bc.Id });
-            builder.Entity<TaskEquipment>()
-                .HasOne(bc => bc.Equipment)
-                .WithMany(b => b.TaskEquipments)
-                .HasForeignKey(bc => bc.EquipmentId);
-            builder.Entity<TaskEquipment>()
-                .HasOne(bc => bc.Task)
-                .WithMany(c => c.TaskEquipments)
-                .HasForeignKey(bc => bc.Id);
+       
 
             base.OnModelCreating(builder);
         }
@@ -71,11 +62,7 @@ namespace INF370.Group6.API.Layers.Data.Context
         public DbSet<RentalRequestStatus> RentalRequestStatuses { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Equipment> Equipments { get; set; }
-        public DbSet<TaskEquipment> TaskEquipments { get; set; }
 
-        public DbSet<Checkout_CheckinDate> Checkout_CheckinDates { get; set; }
-
-        public DbSet<Checkout_CheckIn> Checkout_CheckIns { get; set; }
 
 
 

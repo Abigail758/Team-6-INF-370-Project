@@ -26,6 +26,6 @@ namespace INF370.Group6.API.Layers.Core.Equipments
         public int Quantity { get; set; }
 
 
-        public ICollection<TaskEquipment> TaskEquipments{ get; set; }
+        public ICollection<Task> Tasks{ get; set; }
     }
 }
