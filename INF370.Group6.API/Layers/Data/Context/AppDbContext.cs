@@ -7,7 +7,6 @@ using INF370.Group6.API.Layers.Core.Tasks;
 using INF370.Group6.API.Layers.Core.Rental;
 using INF370.Group6.API.Layers.Core.Tender;
 using INF370.Group6.API.Layers.Core.Clients;
-using INF370.Group6.API.Layers.Core.Equipments;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -61,7 +60,10 @@ namespace INF370.Group6.API.Layers.Data.Context
         public DbSet<RentalRequestStatus> RentalRequestStatuses { get; set; }
         public DbSet<Client> Clients { get; set; }
 
-        public DbSet<Equipment> Equipments { get; set; }
+        public DbSet<Tender> Tenders { get; set; }
+
+        public DbSet<TenderRequest> TenderRequests { get; set; }
+
 
 
 

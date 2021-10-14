@@ -13,18 +13,26 @@ namespace INF370.Group6.API.Layers.Core.Tender
 
         [Required]
         [MaxLength(500)]
-        public string TenderName { get; set; }
+        public string TenderName { get; set;}
+
+        public string Description { get; set; }
         public string AdvertisementDocument { get; set; }
 
-        public DateTime Date { get; set; }
+        public DateTime DateSubmitted { get; set; }
+
+        public string TenderSource { get; set; }
 
         public virtual Client Client{ get; set; }
         public int ClientId { get; set; }
 
 
-        ////
-        ///
-
-
+       
     }
+
+
+    ////
+    ///
+
+
 }
+

@@ -104,36 +104,6 @@ namespace INF370.Group6.API.Migrations
                     b.ToTable("EmployeeTypes");
                 });
 
-            modelBuilder.Entity("INF370.Group6.API.Layers.Core.Equipments.Equipment", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("EquipmentCondition")
-                        .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<string>("EquipmentDescription")
-                        .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<string>("EquipmentName")
-                        .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Equipments");
-                });
-
             modelBuilder.Entity("INF370.Group6.API.Layers.Core.Identity.AppUser", b =>
                 {
                     b.Property<string>("Id")
@@ -481,6 +451,48 @@ namespace INF370.Group6.API.Migrations
                     b.ToTable("TaskStatuses");
                 });
 
+            modelBuilder.Entity("INF370.Group6.API.Layers.Core.Tender.Tender", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AdvertisementDocument")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ClientId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateSubmitted")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("TenderName")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("TenderSource")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TenderStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TenderStatusId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClientId");
+
+                    b.ToTable("Tenders");
+                });
+
             modelBuilder.Entity("INF370.Group6.API.Layers.Core.Tender.TenderRequest", b =>
                 {
                     b.Property<int>("Id")
@@ -494,19 +506,25 @@ namespace INF370.Group6.API.Migrations
                     b.Property<int>("ClientId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("Date")
+                    b.Property<DateTime>("DateSubmitted")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TenderName")
                         .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
+                    b.Property<string>("TenderSource")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ClientId");
 
-                    b.ToTable("TenderRequest");
+                    b.ToTable("TenderRequests");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -747,6 +765,17 @@ namespace INF370.Group6.API.Migrations
                     b.Navigation("Phase");
 
                     b.Navigation("TaskStatus");
+                });
+
+            modelBuilder.Entity("INF370.Group6.API.Layers.Core.Tender.Tender", b =>
+                {
+                    b.HasOne("INF370.Group6.API.Layers.Core.Clients.Client", "Client")
+                        .WithMany()
+                        .HasForeignKey("ClientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Client");
                 });
 
             modelBuilder.Entity("INF370.Group6.API.Layers.Core.Tender.TenderRequest", b =>
