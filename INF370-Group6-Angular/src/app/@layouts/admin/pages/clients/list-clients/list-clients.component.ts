@@ -43,6 +43,7 @@ export class ListClientsComponent implements OnInit {
   
 
   ngOnInit(): void {
+    this.getRecordsFromServer();
   }
 
   applyFilter(event: Event) {
@@ -87,19 +88,37 @@ export class ListClientsComponent implements OnInit {
   //    });
   // }
 
-  deleteClient(id: number ) {
+  deleteClient( id: number) {
+   
     const confirm = this._dialog.open(GlobalConfirmDeletionComponent, {
         disableClose: true,
     });
 
     confirm.afterClosed().subscribe(res => {
       if(res) {
-        this._clientService.deleteClient( this._authService.currentUser.UserName,this.record.id);
-        this.getRecordsFromServer();
+         this._clientService.deleteClient( this._authService.currentUser.UserName,this.record.id);
+         alert('!Deleted Successfully');
+         this.getRecordsFromServer();
+         
       }
     });
-  }
+    }
+  
 
+  // deleteClient(clientId ) {
+   
+  //   const confirm = this._dialog.open(GlobalConfirmDeletionComponent, {
+  //       disableClose: true,
+  //   });
+
+  //   confirm.afterClosed().subscribe(res => {
+  //     if(res) {
+    
+  //       this._clientService.deleteClient( this._authService.currentUser.UserName,this.record.id);
+  //       this.getRecordsFromServer();
+  //     }
+  //   });
+  // }
  
 
   private getRecordsFromServer() {

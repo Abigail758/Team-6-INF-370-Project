@@ -41,6 +41,7 @@ export class ListEquipmentComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.getRecordsFromServer();
   }
 
 
