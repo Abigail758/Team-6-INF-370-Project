@@ -50,7 +50,8 @@ export class UpdatePhaseComponent implements OnInit {
 
   onSubmit() {
     this.errorMessage = "";
-    if (this.updateForm.valid) {
+    if (this.updateForm.valid)
+    if(confirm('Are you sure you want to update the phase details?'))  {
       this._phaseService.updatePhases(this.updateForm.value, this._authService.currentUser.UserName, this.recordToUpdate.id)
         .subscribe(event => {
           if (event.type === HttpEventType.Sent) {
@@ -58,7 +59,7 @@ export class UpdatePhaseComponent implements OnInit {
           }
           if (event.type === HttpEventType.Response) {
             this.showLoadingEndicator = false;
-            this.openSnackBar("Update", "Success!", 2000);
+            this.openSnackBar("Phase details were successfully updated!!", "" ,2000);
             this.closeDialog();
           }
         },

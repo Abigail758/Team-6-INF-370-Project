@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { AuthService } from 'src/app/@api/auth/auth.service';
 import { EmployeeService } from 'src/app/@api/employee/employee.service';
@@ -27,7 +28,7 @@ export class AddProjectComponent implements OnInit {
   constructor(
     private _authService: AuthService,
     private _projectService: ProjectService,
-
+    private router: Router,
     private _formBuilder: FormBuilder,
     private _snackBar: MatSnackBar,
     private _ngxSpinner: NgxSpinnerService,
@@ -40,9 +41,11 @@ export class AddProjectComponent implements OnInit {
   ngOnInit(): void {
   }
 
+ 
   onSubmit() {
     this.errorMessage = "";
-    if (this.addFrom.valid) {
+    if (this.addFrom.valid) 
+    if(confirm('Are you sure you want to add a new project?')) {
       this._projectService.addProject(this.addFrom.value, this._authService.currentUser.UserName)
         .subscribe(event => {
           if (event.type === HttpEventType.Sent) {
@@ -50,10 +53,16 @@ export class AddProjectComponent implements OnInit {
           }
           if (event.type === HttpEventType.Response) {
             this.showLoadingEndicator = false;
-            this.openSnackBar("Add", "Success!", 2000);
+            this.openSnackBar("Project has been successfully added!!", "", 2000);
             this.closeDialog();
+
+            // if(confirm('Would you like to add a new phase'))
+            // {
+            //   this.router.navigate(['admin/add-phase']);
+            // }
           }
         },
+        
           error => {
             this.showLoadingEndicator = false;
             this.errorMessage = error.error.message;

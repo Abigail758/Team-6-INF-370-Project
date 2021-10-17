@@ -27,8 +27,8 @@ export class EquipmentService {
       { reportProgress: true, observe: "events"})
   }
 
-  updateEquipment(payload,username:string, EquipmentId:number) {
-    return this._httpClient.put(this.endpointBase.concat("Equipment/"+username+"/"+EquipmentId),payload,
+  updateEquipment(payload,username:string, equipmentId:number) {
+    return this._httpClient.put(this.endpointBase.concat("Equipment/"+username+"/"+equipmentId),payload,
       { reportProgress: true, observe: "events" })
   }
   

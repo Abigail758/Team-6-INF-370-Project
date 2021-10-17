@@ -40,17 +40,21 @@ export class AddClientComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   onSubmit() {
     this.errorMessage = "";
-    if (this.addForm.valid) {
+    if (this.addForm.valid) 
+    if(confirm('Are you sure you want to add a new client?'))      
+    {
       this._clientService.addClient(this.addForm.value, this._authService.currentUser.UserName)
         .subscribe(event => {
           if (event.type === HttpEventType.Sent) {
             this.showLoadingEndicator = true;
           }
+          
           if (event.type === HttpEventType.Response) {
             this.showLoadingEndicator = false;
-            this.openSnackBar("Add", "Success!", 2000);
+            this.openSnackBar("Client details were successfully added", "", 2000);
             this.closeDialog();
           }
         },
@@ -66,7 +70,7 @@ export class AddClientComponent implements OnInit {
       ClientName: ["", Validators.required],
       ClientAddress: ["", Validators.required],
       ContactPerson: ["", Validators.required],
-      TelephoneNumbers: ["", Validators.required],
+      TelephoneNumbers: ["", Validators.required,Validators.minLength(10),,Validators.maxLength(10)],
       EmailAddress: ["", [Validators.required, Validators.email]],
     });
   }

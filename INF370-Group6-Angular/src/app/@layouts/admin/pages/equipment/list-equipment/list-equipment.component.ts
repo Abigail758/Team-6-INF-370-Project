@@ -74,32 +74,18 @@ export class ListEquipmentComponent implements OnInit {
     })
   }
 
-  // onDeleteRecord(record) {
-  //    this._clientService.deleteClient(record.routeId,this.record.id).subscribe(event => {
-  //      if (event.type === HttpEventType.Sent) {
-  //        this._ngxSpinner.show();
-  //     }
-  //      if (event.type === HttpEventType.Response) {
-  //       this.getRecordsFromServer();
-  //       this._ngxSpinner.hide();
-  //        this.openSnackBar("Delete Client", "Success!", 2000);
-  //     }
-  //    });
-  // }
 
-  deleteEquipment(id: number ) {
-    const confirm = this._dialog.open(GlobalConfirmDeletionComponent, {
-        disableClose: true,
-    });
 
-    confirm.afterClosed().subscribe(res => {
-      if(res) {
-        this._equipmentService.deleteEquipment( this._authService.currentUser.UserName,this.record.id);
-        this.getRecordsFromServer();
-      }
-    });
-  }
-
+ 
+  
+  deleteEquipment( id: number) {
+    if(confirm('Are you sure you want to delete the equipment record')){     
+         this._equipmentService.deleteEquipment( this._authService.currentUser.UserName,id).subscribe(res => {
+            this.openSnackBar("Equipment record was successfully deleted!", "", 2000);
+            this.getRecordsFromServer();
+          }
+         )};
+      };
  
 
   private getRecordsFromServer() {

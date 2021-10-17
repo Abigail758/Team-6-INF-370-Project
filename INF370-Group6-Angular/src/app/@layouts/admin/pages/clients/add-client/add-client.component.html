@@ -40,7 +40,7 @@
           <mat-label>Contact Person</mat-label>
           <input matInput formControlName="ContactPerson" type="text" required>
           <mat-error *ngIf="ContactPerson.touched && ContactPerson.invalid">
-            <div *ngIf="ContactPerson.errors.required">Contact Person is required.</div>
+            <div *ngIf="ContactPerson.errors.required">Contact person name and surname are required.</div>
           </mat-error>
         </mat-form-field>
   
@@ -48,7 +48,7 @@
           <mat-label>Telephone Number</mat-label>
           <input matInput formControlName="TelephoneNumbers" type="text" required>
           <mat-error *ngIf="TelephoneNumbers.touched && TelephoneNumbers.invalid">
-            <div *ngIf="TelephoneNumbers.errors.required">Phone Number is required.</div>
+            <div *ngIf="TelephoneNumbers.errors.required">A 10 digit phone number is required.</div>
           </mat-error>
         </mat-form-field>
   

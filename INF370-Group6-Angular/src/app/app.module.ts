@@ -16,6 +16,7 @@ import { GlobalErrorComponent } from './modals/global/global-error/global-error.
 import { GloConfirmAddeditComponent } from './modals/global/glo-confirm-addedit/glo-confirm-addedit.component';
 
 
+
 export function tokenGetter() {
   return localStorage.getItem("token");
 }
@@ -26,7 +27,8 @@ export function tokenGetter() {
     HomeComponent,
     GlobalConfirmDeletionComponent,
     GlobalErrorComponent,
-    GloConfirmAddeditComponent
+    GloConfirmAddeditComponent,
+  
    
   ],
   imports: [
