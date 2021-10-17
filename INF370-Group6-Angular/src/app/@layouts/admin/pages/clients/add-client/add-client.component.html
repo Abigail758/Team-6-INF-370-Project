@@ -62,24 +62,11 @@
         </mat-form-field>
       </div>
   
-    
-  
       <div class="button-row">
         <button mat-button mat-dialog-close>Cancel </button>
-        <button mat-raised-button type="submit" class="button-submit" (click)="openDialog()">Submit</button>
+        <button mat-raised-button type="submit" class="button-submit" >Submit</button>
       </div>
     </form>
-
-     <h2> mat-dialog-title>Would you like to add a proposed tender for this client?</h2>
-      <mat-dialog-content class="mat-typography">
-      <h3>Would you like to add a tender related to this client?</h3>
-      <p></p>
-
-     </mat-dialog-content>
-      <mat-dialog-actions align="end">
-      <button mat-button mat-dialog-close>Cancel</button>
-      <button mat-button [mat-dialog-close]="true" cdkFocusInitial [routerLink]="['/admin/tenders']" >Add proposed tender</button>
-     </mat-dialog-actions>
-
   </div>
+  
   

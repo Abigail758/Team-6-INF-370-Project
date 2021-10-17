@@ -43,6 +43,7 @@ export class ListClientsComponent implements OnInit {
   
 
   ngOnInit(): void {
+   
   }
 
   applyFilter(event: Event) {

@@ -1,4 +1,7 @@
 export interface Tender {
+   TenderName: any;
+   clientName: any;
+   tenderStatus: any;
    TenderId: number,
    name: string,
    description: string,

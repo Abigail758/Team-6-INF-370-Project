@@ -1,4 +1,4 @@
-import { Tender } from './../../../../../../../@api/tender/tender';
+import {Tender} from '../../../../../../@api/@api/tender/tender';
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TenderStatus } from 'src/app/@api/tender/tender';
@@ -20,16 +20,15 @@ export class AddTenderComponent implements OnInit {
   errorMessage = "";
   showLoadingEndicator = false;
 
-  addFrom: FormGroup;
+  addForm: FormGroup;
   listOfTenderStatuses: TenderStatus[] = [];
 
   tender: Tender;
 
-    // Variable to store shortLink from api response
-    shortLink: string = "";
-    loading: boolean = false; // Flag variable
-    file: File = null; // Variable to store file
-
+   // Variable to store shortLink from api response
+   shortLink: string = "";
+   loading: boolean = false; // Flag variable
+   file: File = null; // Variable to store file
 
   constructor(
     private _authService: AuthService,
@@ -41,8 +40,8 @@ export class AddTenderComponent implements OnInit {
     private _ngxSpinner: NgxSpinnerService,
     public dialogRef: MatDialogRef<AddTenderComponent>
   ) {
-    this.getTenderStatusFromServer();
-    this.buildAddFrom(_formBuilder);
+   
+    this.buildAddForm(_formBuilder);
    }
 
   ngOnInit(): void {
@@ -50,15 +49,17 @@ export class AddTenderComponent implements OnInit {
 
   onSubmit() {
     this.errorMessage = "";
-    if (this.addFrom.valid) {
-      this._tenderService.addTender(this.addFrom.value, this._authService.currentUser.UserName)
+    if (this.addForm.valid) 
+    if(confirm('Are you sure you want to add a proposed tender?'))
+    {
+      this._tenderService.addTender(this.addForm.value, this._authService.currentUser.UserName)
         .subscribe(event => {
           if (event.type === HttpEventType.Sent) {
             this.showLoadingEndicator = true;
           }
           if (event.type === HttpEventType.Response) {
             this.showLoadingEndicator = false;
-            this.openSnackBar("Add", "Success!", 2000);
+            this.openSnackBar("Proposed tender added successfully!", "", 2000);
             this.closeDialog();
           }
         },
@@ -69,43 +70,23 @@ export class AddTenderComponent implements OnInit {
     }
   }
 
-  private buildAddFrom(_formBuilder: FormBuilder) {
-    this.addFrom = _formBuilder.group({
-      Name: ["", Validators.required],
-      Description: ["", Validators.required],
-      DateSubmitted: ["", Validators.required],
-      TenderSource: ["", Validators.required],
-      TenderStatusName: ["", Validators.required],
-      TenderStatusId: ["", Validators.required],
+  private buildAddForm(_formBuilder: FormBuilder) {
+    this.addForm = _formBuilder.group({
+      TenderName: ["", Validators.required],
+      description: ["", Validators.required],
+     dateSubmitted: ["", Validators.required],
+      tenderSource: ["", Validators.required],
+      tenderStatus: ["", Validators.required],
       clientName: ["", Validators.required]
     });
   }
-  get Name() { return this.addFrom.get('Name'); }
-  get Description() { return this.addFrom.get('Description'); }
-  get  DateSubmitted() { return this.addFrom.get(' DateSubmitted'); }
-  get  TenderSource() { return this.addFrom.get( 'TenderSource'); }
-  get TenderStatusName() { return this.addFrom.get('TenderStatusName'); }
-  get  TenderStatusId() { return this.addFrom.get(' TenderStatusId'); }
-  get clientName() { return this.addFrom.get('clientName'); }
+  get TenderName() { return this.addForm.get('TenderName'); }
+  get description() { return this.addForm.get('description'); }
+  get  dateSubmitted() { return this.addForm.get('dateSubmitted'); }
+  get  tenderSource() { return this.addForm.get( 'tenderSource'); }
+  get tenderStatus() { return this.addForm.get('tenderStatus'); }
+  get  clientName() { return this.addForm.get('clientName'); }
  
-
-
-
-  private getTenderStatusFromServer() {
-    this._tenderService.getAllTenderStatuses().subscribe(event => {
-      if (event.type === HttpEventType.Sent) {
-        this._ngxSpinner.show();
-      }
-      if (event.type === HttpEventType.Response) {
-        this._ngxSpinner.hide();
-        this. listOfTenderStatuses = event.body as TenderStatus[];
-      }
-    },
-      error => {
-        this._ngxSpinner.hide();
-        this.openErrorMessageSnackBar(error.error.message);
-      });
-  }
 
   private closeDialog() {
     this.dialogRef.close({ event: 'Cancel' });
@@ -128,8 +109,7 @@ export class AddTenderComponent implements OnInit {
     });
   }
 
-
-  // On file Select
+ // On file Select
  onChange(event) {
   this.file = event.target.files[0];
 }

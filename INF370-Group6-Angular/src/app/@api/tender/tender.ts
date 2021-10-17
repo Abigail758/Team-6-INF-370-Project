@@ -1,12 +1,12 @@
 export interface Tender {
     TenderId: number,
-    name: string,
+    TenderName: string,
     description: string,
     rawDateSubmitted: Date,
     dateSubmitted: string,
     tenderSource: string,
     tenderStatusId: number,
-    tenderStatusName: string,
+    tenderStatus: string,
     clientName: string
  }
  

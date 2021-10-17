@@ -118,7 +118,7 @@ namespace INF370.Group6.API.Controllers
         {
             var tenderTypesInDb = _context.Tenders
 
-                .OrderBy(item => item.TenderName)
+                .OrderBy(item => item.Id)
                 .Select(item => new GetTender
                 {
                     Id = item.Id,
@@ -130,14 +130,14 @@ namespace INF370.Group6.API.Controllers
                     Client = item.Client,
                     ClientId = item.ClientId
 
-                }).OrderBy(item => item.DateSubmitted).ToList();
+                }).OrderBy(item => item.Id).ToList();
 
             return tenderTypesInDb;
         }
 
 
-        [HttpDelete("Clients/Delete/{username}/{id}")]
-        public async Task<IActionResult> DeleteTenders(string username, int id)
+        [HttpDelete("Tenders/Delete/{username}/{id}")]
+        public async Task<IActionResult> DeleteTender (string username, int id)
         {
             var message = "";
             if (ModelState.IsValid)

@@ -20,9 +20,8 @@ import { UpdateTenderComponent } from '../../update-tender/update-tender/update-
   styleUrls: ['./list-tender.component.scss']
 })
 
-
   export class ListTenderComponent implements OnInit {
-    displayedColumns: string[] = ['tenderStatus', 'name', 'description', 'dateSubmitted', 'tenderSource', 'actions'];
+    displayedColumns: string[] = ['TenderName', 'description', 'dateSubmitted',  'tenderSource','tenderStatus','clientName' ,'actions'];
     dataSource: any;
     listOfRecords: Tender[] = [];
     record: Tender;
@@ -30,7 +29,6 @@ import { UpdateTenderComponent } from '../../update-tender/update-tender/update-
     @ViewChild(MatSort, { static: true }) sort: MatSort;
     @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   
-
 
   constructor(
     private _authService: AuthService,
@@ -75,18 +73,7 @@ import { UpdateTenderComponent } from '../../update-tender/update-tender/update-
     })
   }
 
-  onDeleteRecord(record) {
-    // this._brokerService.deleteBroker(record.routeId).subscribe(event => {
-    //   if (event.type === HttpEventType.Sent) {
-    //     this._ngxSpinner.show();
-    //   }
-    //   if (event.type === HttpEventType.Response) {
-    //     this.getRecordsFromServer();
-    //     this._ngxSpinner.hide();
-    //     this.openSnackBar("Delete Broker", "Success!", 2000);
-    //   }
-    // });
-  }
+ 
 
   private getRecordsFromServer() {
     this._tenderService.getAllTenders().subscribe(event => {
@@ -127,3 +114,4 @@ import { UpdateTenderComponent } from '../../update-tender/update-tender/update-
   }
 
 }
+

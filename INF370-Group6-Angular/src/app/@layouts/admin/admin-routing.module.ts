@@ -25,9 +25,8 @@ import { ProjectprogressreportComponent } from './pages/reports/projectprogressr
 import { InventoryreportComponent } from './pages/reports/inventoryreport/inventoryreport.component';
 import { ExpensereportComponent } from './pages/reports/expensereport/expensereport.component';
 import { SubcontractoreportComponent } from './pages/reports/subcontractoreport/subcontractoreport.component';
-import {ListTenderComponent} from './pages/tender/manage-tender/list-tender/list-tender/list-tender.component';
+import {ListTenderComponent} from './pages/tender/list-tender/list-tender/list-tender.component';
 import {ListSupplierComponent} from './pages/supplier/manage-supplier/list-supplier/list-supplier/list-supplier.component';
-import {ListTenderStatusComponent} from './pages/tender/tender-statuses/list-tender-statuses/list-tender-status/list-tender-status.component';
 import {ListSupplierTypeComponent} from './pages/supplier/supplier-types/list-supplier-types/list-supplier-type/list-supplier-type.component';
 import { ListClientsComponent } from './pages/clients/list-clients/list-clients.component';
 import { AddClientComponent } from './pages/clients/add-client/add-client.component';
@@ -61,7 +60,7 @@ const routes: Routes = [
       { path: 'expensereport', component: ExpensereportComponent },
       { path: 'subcontractoreport', component: SubcontractoreportComponent },
 
-      { path: 'tender-statuses', component: ListTenderStatusComponent },
+      
       { path: 'supplier-types', component: ListSupplierTypeComponent },
 
       { path: 'list-clients', component: ListClientsComponent },
