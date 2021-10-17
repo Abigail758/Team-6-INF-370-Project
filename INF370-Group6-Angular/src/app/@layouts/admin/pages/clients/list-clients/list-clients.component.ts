@@ -29,7 +29,7 @@ export class ListClientsComponent implements OnInit {
   record: Client;
   @ViewChild(MatSort, { static: true }) sort: MatSort;
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
-
+  showLoadingEndicator = false;
 
   constructor(
     private _authService: AuthService,
@@ -43,7 +43,7 @@ export class ListClientsComponent implements OnInit {
   
 
   ngOnInit(): void {
-   
+    this.getRecordsFromServer();
   }
 
   applyFilter(event: Event) {
@@ -88,19 +88,61 @@ export class ListClientsComponent implements OnInit {
   //    });
   // }
 
-  deleteClient(id: number ) {
-    const confirm = this._dialog.open(GlobalConfirmDeletionComponent, {
-        disableClose: true,
-    });
+  // deleteClient( id: number) {
+   
+  //   const confirm = this._dialog.open(GlobalConfirmDeletionComponent, {
+  //       disableClose: true,
+  //   });
 
-    confirm.afterClosed().subscribe(res => {
-      if(res) {
-        this._clientService.deleteClient( this._authService.currentUser.UserName,this.record.id);
-        this.getRecordsFromServer();
-      }
-    });
-  }
+  //   confirm.afterClosed().subscribe(res => {
+  //     if(res) {
+  //        this._clientService.deleteClient( this._authService.currentUser.UserName,this.record.id);
+  //        alert('!Deleted Successfully');
+  //        this.getRecordsFromServer();
+         
+  //     }
+  //   });
+  //   }
+  
+    // deleteClient( id: number) {
+    // if(confirm('Are you sure you want to delete record')){     
+    //      this._clientService.deleteClient( this._authService.currentUser.UserName,id).subscribe(res => {
+    //      alert('!Deleted Successfully');
+    //      this.getRecordsFromServer();
+    //      this._snackBar.open(res.toString(), '', {
+    //       duration: 1000,
+    //       verticalPosition: 'top'
+    //      });
+    //   });
+    // }
+    // }
 
+    deleteClient( id: number) {
+      if(confirm('Are you sure you want to delete the client record')){     
+           this._clientService.deleteClient( this._authService.currentUser.UserName,id).subscribe(res => {
+              this.openSnackBar("Client record was successfully deleted!", "", 2000);
+              this.getRecordsFromServer();
+            }
+           )};
+        };
+    
+      
+
+
+  // deleteClient(clientId ) {
+   
+  //   const confirm = this._dialog.open(GlobalConfirmDeletionComponent, {
+  //       disableClose: true,
+  //   });
+
+  //   confirm.afterClosed().subscribe(res => {
+  //     if(res) {
+    
+  //       this._clientService.deleteClient( this._authService.currentUser.UserName,this.record.id);
+  //       this.getRecordsFromServer();
+  //     }
+  //   });
+  // }
  
 
   private getRecordsFromServer() {

@@ -1,13 +1,26 @@
 
 
-<div class="btn-con">
-    <h1>Reports </h1>
-    <p>Click on the following links to be able to generate a report as required.</p>
-    <button id="tim" class="btn btn-primary" routerLink="/monthlyrentalreport">Monthly Rental Report</button><br><br>
-    <button class="btn btn-primary" routerLink="admin/projectprogressreport">Progress Project Report</button><br><br>
-    <button class="btn btn-primary" routerLink="/inventoryreport">Inventory Tracking Report</button><br><br>
-    <button class="btn btn-primary" routerLink="/expensereport">Expense Report</button><br><br>
-    <button class="btn btn-primary" routerLink="/subcontractorreport">Subcontractor Report</button><br><br>
-    
-</div>
+<div class="wrapper">
+    <mat-card class="mat-elevation-z8 table-header-container">
+      <div class="table-top-controllers">
+        <span class="table-name"> <h5>Reports</h5>  </span>
+      </div>
+    </mat-card>
+     
+  
+    <div class="mat-elevation-z8 table-container">
+        <p>Click on the following links to be able to generate a report as required.</p>
+      <button mat-menu-item (click)="btnMonthlyReport()">Monthly Rental Report</button>
+      <button mat-menu-item (click)="btnProgressReport()">Progress Project Report</button>
+      <button mat-menu-item (click)="btnInventoryTrackingReport()">Inventory Tracking Report</button>
+      <button mat-menu-item (click)="btnExpenseReport()">Expense Report</button>
+      <button mat-menu-item (click)="btnSubcontractorReport()">Subcontractor Report</button>
+
+    </div>
+
+
+<div>
+  
+  
+  
 

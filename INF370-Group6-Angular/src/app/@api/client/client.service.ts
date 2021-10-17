@@ -35,7 +35,8 @@ export class ClientService {
   
 
   deleteClient(username:string, id:number) {
-    return this._httpClient.delete(this.endpointBase.concat("Clients/"+username+"/"+id),
+  //  alert(username);
+    return this._httpClient.delete(this.endpointBase.concat("Clients/Delete/"+username+"/"+id),
       { reportProgress: true, observe: "events" })
   }
 

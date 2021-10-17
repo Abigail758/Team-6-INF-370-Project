@@ -149,7 +149,7 @@ namespace INF370.Group6.API.Controllers
         }
 
 
-        [HttpDelete("Clients/Delete/{username}/{id}")]
+        [HttpDelete("Delete/{username}/{id}")]
         public async Task<IActionResult> DeleteClients(string username, int id)
         {
             var message = "";

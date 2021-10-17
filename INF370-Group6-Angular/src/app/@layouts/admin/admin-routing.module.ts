@@ -13,7 +13,7 @@ import { ListAppRolesComponent } from './pages/app-roles/list-app-roles/list-app
 import { ListEmployeeTypesComponent } from './pages/employees/manage-employee-types/list-employee-types/list-employee-types.component';
 import { ListEmployeesComponent } from './pages/employees/manage-employees/list-employees/list-employees.component';
 import { ListProjectsComponent } from './pages/projects/manage-projects/list-projects/list-projects.component';
-import { ListProjectStatusesComponent } from './pages/projects/project-statuses/list-project-statuses/list-project-statuses.component';
+
 import { ListPhasesComponent } from './pages/phases/manage-phases/list-phases/list-phases.component';
 import { ListPhaseStatusesComponent } from './pages/phases/statuses/list-phase-statuses/list-phase-statuses.component';
 import { ListTaskStatusesComponent } from './pages/tasks/task-statuses/list-task-statuses/list-task-statuses.component';
@@ -34,6 +34,9 @@ import { UpdateClientComponent } from './pages/clients/update-client/update-clie
 import { ListEquipmentComponent } from './pages/equipment/list-equipment/list-equipment.component'; 
 import { AddEquipmentComponent } from './pages/equipment/add-equipment/add-equipment.component'; 
 import { UpdateEquipmentComponent } from './pages/equipment/update-equipment/update-equipment.component';
+import { AddPhaseComponent } from './pages/phases/manage-phases/add-phase/add-phase.component';
+import { CompleteProjectsComponent } from './pages/projects/manage-projects/complete-projects/complete-projects.component';
+
 
 const routes: Routes = [
   {
@@ -46,9 +49,12 @@ const routes: Routes = [
       { path: 'employees', component: ListEmployeesComponent },
       { path: 'employee-types', component: ListEmployeeTypesComponent },
       { path: 'projects', component: ListProjectsComponent },
+      { path: 'complete-projects', component: CompleteProjectsComponent},
+      { path: 'add-phase', component: AddPhaseComponent },
+     
       { path: 'tenders', component: ListTenderComponent },
       { path: 'supplier', component: ListSupplierComponent },
-      { path: 'project-statuses', component: ListProjectStatusesComponent },
+    
       { path: 'phase-statuses', component: ListPhaseStatusesComponent },
       { path: 'task-statuses', component: ListTaskStatusesComponent },
       { path: 'rental-status', component: RentalStatusComponent },

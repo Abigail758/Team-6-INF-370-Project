@@ -43,7 +43,8 @@ export class UpdateEquipmentComponent implements OnInit {
 
   onSubmit() {
     this.errorMessage = "";
-    if (this.updateForm.valid) {
+    if (this.updateForm.valid)
+    if(confirm('Are you sure you want to update equipment details?'))  {
       this._equipmentService.updateEquipment(this.updateForm.value, this._authService.currentUser.UserName,this.recordToUpdate.id)    
       .subscribe(event => {
           if (event.type === HttpEventType.Sent) {
@@ -51,7 +52,7 @@ export class UpdateEquipmentComponent implements OnInit {
           }
           if (event.type === HttpEventType.Response) {
             this.showLoadingEndicator = false;
-            this.openSnackBar("Add", "Success!", 2000);
+            this.openSnackBar("Equipment details were successfully updated!", "Success!", 2000);
             this.closeDialog();
           }
         },

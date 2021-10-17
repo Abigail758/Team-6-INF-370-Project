@@ -49,17 +49,23 @@
               <mat-icon class="icon-library">create</mat-icon>
             </button>
   
-            <button mat-button (click)="deleteEquipment(element)" matTooltip="Delete">
+            <button mat-button (click)="deleteEquipment(element.id)" matTooltip="Delete">
               <mat-icon class="icon-library">delete</mat-icon>
             </button>
   
-            <!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="list menu" matTooltip="Show actions">
+             <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="list menu" matTooltip="Show actions">
               <mat-icon>more_horiz</mat-icon>
             </button>
             <mat-menu #menu="matMenu">
-              <button mat-menu-item (click)="onSendAccountCreatedNotification(element)">Send Account Detail via
-                Email</button>
-            </mat-menu> -->
+              <button mat-menu-item>Checkout Equipment</button>
+            </mat-menu> 
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>CheckIn Equipment</button>
+            </mat-menu> 
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>Writeoff Equipment</button>
+            </mat-menu> 
+            
   
           </mat-cell>
         </ng-container>

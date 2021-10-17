@@ -1,27 +1,35 @@
-<h1>Monthly Rental Report </h1>
 
-<div class="reportdiv2">
-<label>From:</label>&nbsp;
-<mat-form-field appearance="outline">
-    <mat-label>Choose a date</mat-label>
-    <input matInput [matDatepicker]="picker">
-    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
-  </mat-form-field>
-<br>
-  <label class="lbl1">To:</label>&nbsp;&nbsp;
-  <mat-form-field appearance="outline">
-      <mat-label>Choose a date</mat-label>
-      <input matInput [matDatepicker]="picker1">
-      <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-      <mat-datepicker #picker1></mat-datepicker>
-    </mat-form-field>
+
+<div class="wrapper">
+  <mat-card class="mat-elevation-z8 table-header-container">
+    <div class="table-top-controllers">
+      <span class="table-name"> <h6>Monthly Rental Report</h6>  </span>
+    </div>
+  </mat-card>
+
+  <div class="mat-elevation-z8 table-container">
+    <p>Please select date range in which report should be generated</p>
+      <label>From:</label>&nbsp;
+      <mat-form-field appearance="outline">
+          <mat-label>Choose a date</mat-label>
+          <input matInput [matDatepicker]="picker">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      <br>
+        <label class="lbl1">To:</label>&nbsp;&nbsp;
+        <mat-form-field appearance="outline">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker1">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
 
     <div class="button-flex-container">
       <button [disabled] class="btn btn-primary">       
           Generate Report
       </button> &nbsp;&nbsp;
-      <button routerLink="/project" class="btn btn-primary">Download Report</button>
+      <button routerLink="/admin/report-main" class="btn btn-primary">Download Report</button>
   </div>
 </div>
 
