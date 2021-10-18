@@ -53,7 +53,9 @@
             <div *ngIf="tenderSource.errors.required">Tender Source is required.</div>
           </mat-error>
         </mat-form-field>
+        </div>
 
+         <div class="field-container-inline">
         <mat-form-field class="field-inline">
         <mat-label>Tender Status</mat-label>
         <mat-select formControlName=" tenderStatus">
@@ -107,19 +109,6 @@
         Upload
     </button>
 </div>
-  
-<!-- Shareable short link of  uoloaded file -->
-<div class="container text-center jumbotron"
-    *ngIf="shortLink">
-    <h2> View File</h2>
-    <a href="{{shortLink}}">{{shortLink}}</a>
-</div>
-  
-<!--Flag variable is used here-->
-<div class="container" *ngIf="loading">
-    <h3>Loading ...</h3>
-</div>
-
     </form>
   </div>
 
