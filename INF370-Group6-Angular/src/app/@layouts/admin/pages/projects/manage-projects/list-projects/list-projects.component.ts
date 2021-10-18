@@ -63,6 +63,12 @@ export class ListProjectsComponent implements OnInit {
     })
   }
 
+  // btnConfirm(){
+  //   (confirm('Are you sure you want to update the project details?')) ;
+  //   this.openSnackBar("Project has been successfully updated!!", "", 10000);
+
+  // }
+
   onCompleteProject(record: Project) {
     let dialogRef = this._dialog.open(CompleteProjectsComponent, {
       width: "50%",

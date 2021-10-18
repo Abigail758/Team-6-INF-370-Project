@@ -63,7 +63,7 @@ export class AddPhaseTaskComponent implements OnInit {
           }
           if (event.type === HttpEventType.Response) {
             this.showLoadingEndicator = false;
-            this.openSnackBar("Phase has been successfully added!", "", 2000);
+            this.openSnackBar("Task has been successfully added!", "", 10000);
             this.closeDialog();
           }
         },
