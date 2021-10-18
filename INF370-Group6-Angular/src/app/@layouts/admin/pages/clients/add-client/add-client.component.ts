@@ -2,7 +2,7 @@ import { ClientService } from './../../../../../@api/client/client.service';
 import { HttpEventType } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { MatDialogRef } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { AuthService } from 'src/app/@api/auth/auth.service';
@@ -26,9 +26,11 @@ export class AddClientComponent implements OnInit {
   constructor(
     private _authService: AuthService,
     private _clientService: ClientService,
-
+    public dialog: MatDialog,
     private _formBuilder: FormBuilder,
     private _snackBar: MatSnackBar,
+
+
     private _ngxSpinner: NgxSpinnerService,
     public dialogRef: MatDialogRef<AddClientComponent>
   ) {
@@ -102,6 +104,7 @@ export class AddClientComponent implements OnInit {
     });
   }
 
+ 
 
 
 

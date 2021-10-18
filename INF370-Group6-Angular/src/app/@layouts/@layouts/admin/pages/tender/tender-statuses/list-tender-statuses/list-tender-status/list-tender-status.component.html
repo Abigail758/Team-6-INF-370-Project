@@ -1,0 +1,58 @@
+<div class="wrapper">
+  <mat-card class="mat-elevation-z8 table-header-container">
+    <div class="table-top-controllers">
+      <span class="table-name"> Tender Statuses | </span>
+      <button mat-button (click)="onAddNew()" class="top-table-menu">Add New Tender Status</button>
+    </div>
+
+    <mat-form-field>
+      <mat-label>Filter</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium">
+    </mat-form-field>
+  </mat-card>
+
+  <div class="mat-elevation-z8 table-container">
+
+    <mat-table [dataSource]="dataSource" matSort class="table" #mytable>
+
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="description">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Description </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.description}} </mat-cell>
+      </ng-container>
+
+
+      <ng-container matColumnDef="actions">
+
+        <mat-header-cell *matHeaderCellDef mat-sort-header> </mat-header-cell>
+        <mat-cell *matCellDef="let element">
+
+          <button mat-button (click)="onUpdateRecord(element)" matTooltip="Update">
+            <mat-icon class="icon-library">create</mat-icon>
+          </button>
+
+          <button mat-button (click)="onDeleteRecord(element)" matTooltip="Delete">
+            <mat-icon class="icon-library">delete</mat-icon>
+          </button>
+
+        </mat-cell>
+      </ng-container>
+      <mat-header-row *matHeaderRowDef="displayedColumns;  sticky: true"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+      <tr class="mat-row no-data-row" *matNoDataRow>
+        <h2 class="mat-cell no-data-text">No data found</h2>
+      </tr>
+    </mat-table>
+
+  </div>
+</div>
+
+<ngx-spinner bdColor="rgba(51,51,51,0.8)" size="medium" color="#fff" type="ball-scale-multiple">
+  <p style="font-size: 20px; color: white">Please wait...</p>
+</ngx-spinner>
+

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
+import {Observable} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +10,8 @@ import { environment } from 'src/environments/environment';
 export class TenderService {
 
   endpointBase = environment.endpointBase;
+  baseApiUrl = "https://file.io";
+
 
   constructor(
     private _httpClient: HttpClient,
@@ -57,6 +60,23 @@ export class TenderService {
     return this._httpClient.delete(this.endpointBase.concat("Tenders/"+username+"/"+id),
       { reportProgress: true, observe: "events" })
   }
+
+
+  // Returns an observable
+ upload(file):Observable<any> {
+  
+  // Create form data
+  const formData = new FormData(); 
+    
+  // Store form name as "file" with file data
+  formData.append("file", file, file.name);
+    
+  // Make http post request over api
+  // with formData as req
+  return this._httpClient.post(this.baseApiUrl, formData)
+  }
+
+  
 }
 
 
