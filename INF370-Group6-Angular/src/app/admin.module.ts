@@ -1,5 +1,5 @@
 import { SharedModule } from './../../shared/shared.module';
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 import { AdminRoutingModule } from './admin-routing.module';
 import { AdminComponent } from './admin.component';
@@ -35,34 +35,6 @@ import { ListPhaseTasksComponent } from './pages/tasks/manage-tasks/list-phase-t
 import { ListTaskStatusesComponent } from './pages/tasks/task-statuses/list-task-statuses/list-task-statuses.component';
 import { AddTaskStatusComponent } from './pages/tasks/task-statuses/add-task-status/add-task-status.component';
 import { UpdateTaskStatusComponent } from './pages/tasks/task-statuses/update-task-status/update-task-status.component';
-import { RentalRequestStatusComponent } from './pages/rentals/rental-request-status/rental-request-status.component';
-import { RentalComponent } from './pages/rentals/rental/rental.component';
-import { RentalStatusComponent } from './pages/rentals/rental-status/rental-status.component';
-import { RentalRequestComponent } from './pages/rentals/rental-request/rental-request.component';
-import { ReportMainComponent } from './pages/reports/report-main/report-main.component';
-import { MonthlyrentalreportComponent } from './pages/reports/monthlyrentalreport/monthlyrentalreport.component';
-import { ProjectprogressreportComponent } from './pages/reports/projectprogressreport/projectprogressreport.component';
-import { InventoryreportComponent } from './pages/reports/inventoryreport/inventoryreport.component';
-import { ExpensereportComponent } from './pages/reports/expensereport/expensereport.component';
-import { SubcontractoreportComponent } from './pages/reports/subcontractoreport/subcontractoreport.component';
-import { AddRentalComponent } from './pages/rentals/add-rental/add-rental.component';
-import { UpdateRentalComponent } from './pages/rentals/update-rental/update-rental.component';
-import { AddTenderComponent } from './pages/tender/add-tender/add-tender/add-tender.component';
-import {ListTenderComponent} from './pages/tender/list-tender/list-tender/list-tender.component';
-import {ListSupplierComponent} from './pages/supplier/manage-supplier/list-supplier/list-supplier/list-supplier.component';
-import {ListSupplierTypeComponent} from './pages/supplier/supplier-types/list-supplier-types/list-supplier-type/list-supplier-type.component';
-import {AddSupplierComponent} from './pages/supplier/manage-supplier/add-supplier/add-supplier/add-supplier.component';
-import {UpdateSupplierComponent} from './pages/supplier/manage-supplier/update-supplier/update-supplier/update-supplier.component';
-import {AddSupplierTypeComponent} from './pages/supplier/supplier-types/add-supplier-types/add-supplier-type/add-supplier-type.component';
-import { UpdateSupplierTypeComponent } from './pages/supplier/supplier-types/update-supplier-types/update-supplier-type/update-supplier-type.component';
-import {UpdateTenderComponent} from './pages/tender/update-tender/update-tender/update-tender.component';
-import { ListClientsComponent } from './pages/clients/list-clients/list-clients.component'; 
-import { AddClientComponent } from './pages/clients/add-client/add-client.component';
-import { UpdateClientComponent } from './pages/clients/update-client/update-client.component';
-import { AddEquipmentComponent } from './pages/equipment/add-equipment/add-equipment.component';
-import { ListEquipmentComponent } from './pages/equipment/list-equipment/list-equipment.component';
-import { UpdateEquipmentComponent } from './pages/equipment/update-equipment/update-equipment.component';
-import { CompleteProjectsComponent } from './pages/projects/manage-projects/complete-projects/complete-projects.component'; 
 
 @NgModule({
   declarations: [
@@ -97,37 +69,7 @@ import { CompleteProjectsComponent } from './pages/projects/manage-projects/comp
     ListPhaseTasksComponent,
     ListTaskStatusesComponent,
     AddTaskStatusComponent,
-    UpdateTaskStatusComponent,
-    RentalRequestStatusComponent,
-    RentalComponent,
-    RentalStatusComponent,
-    RentalRequestComponent,
-    ReportMainComponent,
-    MonthlyrentalreportComponent,
-    ProjectprogressreportComponent,
-    InventoryreportComponent,
-    ExpensereportComponent,
-    SubcontractoreportComponent,
-    AddRentalComponent,
-    UpdateRentalComponent,
-    AddTenderComponent,
-    AddSupplierComponent,
-    UpdateSupplierComponent,
-    AddSupplierTypeComponent,
-    UpdateSupplierTypeComponent,
-    ListSupplierComponent,
-    ListSupplierTypeComponent,
-    ListTenderComponent,
-    UpdateTenderComponent,
-    ListClientsComponent,
-    AddClientComponent,
-    UpdateClientComponent,
-    AddEquipmentComponent,
-    ListEquipmentComponent,
-    UpdateEquipmentComponent,
-    CompleteProjectsComponent,
-
-    
+    UpdateTaskStatusComponent
   ],
   imports: [
     AdminRoutingModule,
