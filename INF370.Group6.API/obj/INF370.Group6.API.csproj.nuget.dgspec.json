@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Zanele\\Documents\\GitHub\\Team-6-INF-370-Project\\INF370.Group6.API\\INF370.Group6.API.csproj": {}
+    "C:\\Users\\user\\Documents\\INF-370-System\\Team-6-INF-370-Project\\INF370.Group6.API\\INF370.Group6.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Zanele\\Documents\\GitHub\\Team-6-INF-370-Project\\INF370.Group6.API\\INF370.Group6.API.csproj": {
+    "C:\\Users\\user\\Documents\\INF-370-System\\Team-6-INF-370-Project\\INF370.Group6.API\\INF370.Group6.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zanele\\Documents\\GitHub\\Team-6-INF-370-Project\\INF370.Group6.API\\INF370.Group6.API.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\INF-370-System\\Team-6-INF-370-Project\\INF370.Group6.API\\INF370.Group6.API.csproj",
         "projectName": "INF370.Group6.API",
-        "projectPath": "C:\\Users\\Zanele\\Documents\\GitHub\\Team-6-INF-370-Project\\INF370.Group6.API\\INF370.Group6.API.csproj",
-        "packagesPath": "C:\\Users\\Zanele\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zanele\\Documents\\GitHub\\Team-6-INF-370-Project\\INF370.Group6.API\\obj\\",
+        "projectPath": "C:\\Users\\user\\Documents\\INF-370-System\\Team-6-INF-370-Project\\INF370.Group6.API\\INF370.Group6.API.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Documents\\INF-370-System\\Team-6-INF-370-Project\\INF370.Group6.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Zanele\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
