@@ -64,8 +64,7 @@ import { AddClientComponent } from './pages/clients/add-client/add-client.compon
 import { UpdateClientComponent } from './pages/clients/update-client/update-client.component';
 import { AddEquipmentComponent } from './pages/equipment/add-equipment/add-equipment.component';
 import { ListEquipmentComponent } from './pages/equipment/list-equipment/list-equipment.component';
-import { UpdateEquipmentComponent } from './pages/equipment/update-equipment/update-equipment.component';
-import { CompleteProjectsComponent } from './pages/projects/manage-projects/complete-projects/complete-projects.component'; 
+import { UpdateEquipmentComponent } from './pages/equipment/update-equipment/update-equipment.component'; 
 
 @NgModule({
   declarations: [
@@ -131,7 +130,6 @@ import { CompleteProjectsComponent } from './pages/projects/manage-projects/comp
     AddEquipmentComponent,
     ListEquipmentComponent,
     UpdateEquipmentComponent,
-    CompleteProjectsComponent,
 
     
   ],

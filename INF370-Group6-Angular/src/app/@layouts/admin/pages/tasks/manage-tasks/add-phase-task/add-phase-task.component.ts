@@ -54,8 +54,7 @@ export class AddPhaseTaskComponent implements OnInit {
   onSubmit() {
     this.errorMessage = "";
     this.addFrom.controls["PhaseId"].setValue(this.phase.id)
-    if (this.addFrom.valid) 
-    if(confirm('Are you sure you want to add a new task?')){
+    if (this.addFrom.valid) {
       this._taskService.addTasks(this.addFrom.value, this._authService.currentUser.UserName)
         .subscribe(event => {
           if (event.type === HttpEventType.Sent) {
@@ -63,7 +62,11 @@ export class AddPhaseTaskComponent implements OnInit {
           }
           if (event.type === HttpEventType.Response) {
             this.showLoadingEndicator = false;
+<<<<<<< HEAD
             this.openSnackBar("Task has been successfully added!", "", 10000);
+=======
+            this.openSnackBar("Add Task", "Success!", 2000);
+>>>>>>> parent of e85910f (project update)
             this.closeDialog();
           }
         },

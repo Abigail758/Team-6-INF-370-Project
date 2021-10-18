@@ -51,9 +51,7 @@ export class AddPhaseComponent implements OnInit {
   onSubmit() {
     this.errorMessage = "";
     this.addFrom.controls["ProjectId"].setValue(this.project.id)
-    if (this.addFrom.valid) 
-    if(confirm('Are you sure you want to add a new phase?'))
-    {
+    if (this.addFrom.valid) {
       this._phaseService.addPhases(this.addFrom.value, this._authService.currentUser.UserName)
         .subscribe(event => {
           if (event.type === HttpEventType.Sent) {
@@ -61,7 +59,7 @@ export class AddPhaseComponent implements OnInit {
           }
           if (event.type === HttpEventType.Response) {
             this.showLoadingEndicator = false;
-            this.openSnackBar("Phase has been successfully added!", "", 2000);
+            this.openSnackBar("Add Phase", "Success!", 2000);
             this.closeDialog();
           }
         },

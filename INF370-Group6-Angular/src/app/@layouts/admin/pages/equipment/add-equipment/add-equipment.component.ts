@@ -41,9 +41,7 @@ export class AddEquipmentComponent implements OnInit {
 
   onSubmit() {
     this.errorMessage = "";
-    if (this.addForm.valid) 
-    if(confirm('Are you sure you want to add equipment details?')) 
-    {
+    if (this.addForm.valid) {
       this._equipmentService.addEquipment(this.addForm.value, this._authService.currentUser.UserName)
         .subscribe(event => {
           if (event.type === HttpEventType.Sent) {
@@ -51,7 +49,7 @@ export class AddEquipmentComponent implements OnInit {
           }
           if (event.type === HttpEventType.Response) {
             this.showLoadingEndicator = false;
-            this.openSnackBar("Equipment details were successfully added!", "", 2000);
+            this.openSnackBar("Add", "Success!", 2000);
             this.closeDialog();
           }
         },

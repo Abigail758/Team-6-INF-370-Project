@@ -49,8 +49,7 @@ export class UpdateProjectComponent implements OnInit {
 
   onSubmit() {
     this.errorMessage = "";
-    if (this.updateForm.valid)
-    if(confirm('Are you sure you want to update the project details?'))  {
+    if (this.updateForm.valid) {
       this._projectService.updateProject(this.updateForm.value, this._authService.currentUser.UserName, this.recordToUpdate.id)
         .subscribe(event => {
           if (event.type === HttpEventType.Sent) {
@@ -58,7 +57,7 @@ export class UpdateProjectComponent implements OnInit {
           }
           if (event.type === HttpEventType.Response) {
             this.showLoadingEndicator = false;
-            this.openSnackBar("Project has been successfully updated!!", "", 2000);
+            this.openSnackBar("Update", "Success!", 2000);
             this.closeDialog();
           }
         },

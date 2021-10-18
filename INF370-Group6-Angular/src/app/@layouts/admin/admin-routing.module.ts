@@ -35,9 +35,6 @@ import { UpdateClientComponent } from './pages/clients/update-client/update-clie
 import { ListEquipmentComponent } from './pages/equipment/list-equipment/list-equipment.component'; 
 import { AddEquipmentComponent } from './pages/equipment/add-equipment/add-equipment.component'; 
 import { UpdateEquipmentComponent } from './pages/equipment/update-equipment/update-equipment.component';
-import { AddPhaseComponent } from './pages/phases/manage-phases/add-phase/add-phase.component';
-import { CompleteProjectsComponent } from './pages/projects/manage-projects/complete-projects/complete-projects.component';
-
 
 const routes: Routes = [
   {
@@ -50,9 +47,6 @@ const routes: Routes = [
       { path: 'employees', component: ListEmployeesComponent },
       { path: 'employee-types', component: ListEmployeeTypesComponent },
       { path: 'projects', component: ListProjectsComponent },
-      { path: 'complete-projects', component: CompleteProjectsComponent},
-      { path: 'add-phase', component: AddPhaseComponent },
-     
       { path: 'tenders', component: ListTenderComponent },
       { path: 'supplier', component: ListSupplierComponent },
     

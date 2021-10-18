@@ -51,7 +51,7 @@
             <mat-icon class="icon-library">create</mat-icon>
           </button>
 
-          <button mat-button  matTooltip="Complete Project" (click)="onCompleteProject(element)">
+          <button mat-button  matTooltip="Complete Project">
             <mat-icon class="icon-library">task</mat-icon>
           </button>
           <!-- (click)="onDeleteRecord(element)" -->
@@ -61,7 +61,6 @@
           <mat-menu #menu="matMenu">
             <button mat-menu-item (click)="onManagePhases(element)">View Phases</button>
             <button mat-menu-item (click)="OnAddNewPhase(element)">Add New Phase</button>
-
           </mat-menu>
 
         </mat-cell>

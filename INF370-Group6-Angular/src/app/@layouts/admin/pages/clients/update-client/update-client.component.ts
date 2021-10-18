@@ -46,8 +46,7 @@ export class UpdateClientComponent implements OnInit {
 
   onSubmit() {
     this.errorMessage = "";
-    if (this.updateForm.valid)
-    if(confirm('Are you sure you want to update the client details?'))   {
+    if (this.updateForm.valid) {
       this._clientService.updateClient(this.updateForm.value, this._authService.currentUser.UserName,this.recordToUpdate.id)    
       .subscribe(event => {
           if (event.type === HttpEventType.Sent) {
@@ -55,7 +54,7 @@ export class UpdateClientComponent implements OnInit {
           }
           if (event.type === HttpEventType.Response) {
             this.showLoadingEndicator = false;
-            this.openSnackBar("Client details were successfully updated!", "", 2000);
+            this.openSnackBar("Add", "Success!", 2000);
             this.closeDialog();
           }
         },

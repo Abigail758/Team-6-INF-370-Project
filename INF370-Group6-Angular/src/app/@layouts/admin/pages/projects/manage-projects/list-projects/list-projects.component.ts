@@ -1,4 +1,3 @@
-
 import { HttpEventType } from '@angular/common/http';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
@@ -16,7 +15,6 @@ import { AddPhaseComponent } from '../../../phases/manage-phases/add-phase/add-p
 import { ListPhasesComponent } from '../../../phases/manage-phases/list-phases/list-phases.component';
 import { AddProjectComponent } from '../add-project/add-project.component';
 import { UpdateProjectComponent } from '../update-project/update-project.component';
-import { CompleteProjectsComponent } from '../complete-projects/complete-projects.component';
 
 @Component({
   selector: 'app-list-projects',
@@ -63,6 +61,7 @@ export class ListProjectsComponent implements OnInit {
     })
   }
 
+<<<<<<< HEAD
   // btnConfirm(){
   //   (confirm('Are you sure you want to update the project details?')) ;
   //   this.openSnackBar("Project has been successfully updated!!", "", 10000);
@@ -84,6 +83,8 @@ export class ListProjectsComponent implements OnInit {
   }
  
 
+=======
+>>>>>>> parent of e85910f (project update)
   onUpdateRecord(record: Project) {
     let dialogRef = this._dialog.open(UpdateProjectComponent, {
       width: "50%",

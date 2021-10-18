@@ -120,6 +120,9 @@ namespace INF370.Group6.API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "INF 370 Group6 API v1"));
             }
 
+            app.UseHsts();
+            app.UseHttpsRedirection();
+
 
             app.UseCors(builder => builder
                 .AllowAnyOrigin()
