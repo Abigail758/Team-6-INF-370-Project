@@ -1,0 +1,65 @@
+<div class="loader-container">
+  <mat-progress-bar *ngIf="showLoadingEndicator" mode="indeterminate"></mat-progress-bar>
+</div>
+<div class="container">
+  <mat-toolbar class="toolbar">
+    <span class="fill-remaining-space"></span>
+    <div class="dialog-header">
+      <div class="dialog-header-title">Add new Equipment </div>
+      <div class="dialog-header-error-message" *ngIf="errorMessage">{{errorMessage}}</div>
+    </div>
+    <span class="fill-remaining-space"></span>
+  </mat-toolbar>
+
+  <form [formGroup]="addFrom" class="form" (ngSubmit)="onSubmit()">
+    
+    <div class="field-container-inline">
+      <mat-form-field class="field-inline">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="Name" type="text" required>
+        <mat-error *ngIf="Name.touched && Name.invalid">
+          <div *ngIf="Name.errors.required">Name is required.</div>
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    
+
+    <div class="field-container-inline">
+      <mat-form-field class="field-inline">
+        <mat-label>Description</mat-label>
+        <textarea matInput formControlName="Description" rows="3" required></textarea>
+        <mat-error *ngIf="Description.touched && Description.invalid">
+          <div *ngIf="Description.errors.required">Description is required.</div>
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="field-container-inline">
+      <mat-form-field class="field-inline">
+        <mat-label>Condition</mat-label>
+        <textarea matInput formControlName="condition" rows="3" required></textarea>
+        <mat-error *ngIf="condition.touched && condition.invalid">
+          <div *ngIf="condition.errors.required">Condition is required.</div>
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="field-container-inline">
+      <mat-form-field class="field-inline">
+        <mat-label>Quantity</mat-label>
+        <textarea matInput formControlName="Quantity" rows="3" required></textarea>
+        <mat-error *ngIf="Quantity.touched && Quantity.invalid">
+          <div *ngIf="Quantity.errors.required">Quantity is required.</div>
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    
+
+    <div class="button-row">
+      <button mat-button mat-dialog-close>Cancel </button>
+      <button mat-raised-button type="submit" class="button-submit">Submit</button>
+    </div>
+  </form>
+</div>
