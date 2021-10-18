@@ -5,6 +5,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { AuthService } from 'src/app/@api/auth/auth.service';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { PhaseService } from 'src/app/@api/phase/phase.service';
 import { Phase } from 'src/app/@api/phase/phase.types';
@@ -34,10 +35,12 @@ export class ListPhaseTasksComponent implements OnInit {
 
   @ViewChild(MatSort, { static: true }) sort: MatSort;
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
+ 
 
   constructor(
     private _snackBar: MatSnackBar,
     private _dialog: MatDialog,
+    private _authService: AuthService,
     private _ngxSpinner: NgxSpinnerService,
     public dialogRef: MatDialogRef<ListPhasesComponent>,
     @Inject(MAT_DIALOG_DATA) dataFromParent: any,
@@ -91,6 +94,15 @@ export class ListPhaseTasksComponent implements OnInit {
       this.getRecordsFromServer();
     })
   }
+
+  deleteRecord( id: number) {
+    if(confirm('Are you sure you want to delete the task record')){     
+         this._taskService.deleteTasks( this._authService.currentUser.UserName,id).subscribe(res => {
+            this.openSnackBar("Task record was successfully deleted!", "", 2000);
+            this.getRecordsFromServer();
+          }
+         )};
+      };
 
   private openSnackBar(message: string, action: string, _duration: number) {
     this._snackBar.open(message, action, {
